@@ -3,7 +3,6 @@
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
 import Header from "@/components/menus/Header"
-import Footer from "@/components/menus/Footer"
 
 export default function NotFound() {
     const router = useRouter()

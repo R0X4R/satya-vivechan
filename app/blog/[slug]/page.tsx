@@ -18,15 +18,6 @@ interface Article {
     reference?: string
 }
 
-interface blogItem {
-    title: string
-    description: string
-    image: string
-    author: string
-    date: string
-    article: Article[]
-}
-
 // Function to generate metadata dynamically
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;

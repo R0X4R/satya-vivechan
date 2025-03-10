@@ -6,10 +6,10 @@ declare module "gray-matter" {
 }
 
 interface PostMetadata {
-    title: string
-    date: string
-    description?: string
-    [key: string]: any // Allows additional metadata fields
+    title: string;
+    date: string;
+    description?: string;
+    [key: string]: unknown; // Allows additional metadata fields with type safety
 }
 
 interface Post {

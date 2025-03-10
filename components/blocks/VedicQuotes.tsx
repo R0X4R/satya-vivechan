@@ -49,7 +49,7 @@ const DailyVedicQuote = () => {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-900 opacity-75"></span>
                     <span className="relative inline-flex size-2 rounded-full bg-lime-900"></span>
                 </span>
-                Today's Wisdom
+                Today&apos;s Wisdom
                 <span className="relative flex size-2">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-900 opacity-75"></span>
                     <span className="relative inline-flex size-2 rounded-full bg-lime-900"></span>

@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { HiOutlineHome } from "react-icons/hi2"
 import { RxChevronLeft } from "react-icons/rx"
 
 const Header = () => {
