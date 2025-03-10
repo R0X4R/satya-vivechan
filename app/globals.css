@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-hindi: var(--font-hindi);
+    --color-gradient-light: linear-gradient(180deg, #ffffff 40.13%, rgb(209, 220, 255) 100%);
+    --color-dark: rgba(5, 5, 5);
+    --height-500: 500px;
+    /* --font-poppins: var(--font-poppins); */
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    text-rendering: optimizeLegibility !important;
+    -webkit-backface-visibility: hidden !important;
+    -moz-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+}
+
+body {
+    font-family: var(--font-bricolage-sans), sans-serif;
+}
+
+/* .hindi {
+    font-family: "Poppins", sans-serif;
+} */
