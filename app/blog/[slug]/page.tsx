@@ -102,7 +102,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                     <div className="mx-auto my-8 flex w-full max-w-5xl flex-col items-center justify-center px-4 md:max-w-7xl md:px-0">
                         <div className="mb-5 flex w-full max-w-4xl items-center justify-between px-2">
                             <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50">
-                                Author: {blogItem.author}
+                                Author: Eshan Singh
                             </p>
                             <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50">
                                 Published: {blogItem.date}
