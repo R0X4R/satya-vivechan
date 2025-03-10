@@ -15,24 +15,22 @@ Lord Shiva is referred to as **Umāpati** (the husband of Goddess Uma) and **Bh�
 
 His famous **Pāshupata Astra** was unparalleled in the entire universe. There was no weapon on earth capable of countering or destroying it. A study of the Mahabharata reveals the extraordinary personality of Lord Shiva—he was an extremely detached ascetic, always immersed in yogic meditation, completely self-controlled despite being married, and possessed of divine abilities such as the power of aerial travel (ākāśagamana).
 
-To understand Shiva’s legacy better, let’s first explore some important terms found in scriptures.
+## Dev
 
-## Dev (देव)
-
-The word **Dev** comes from the Sanskrit root **"Div" (दिव्)**, meaning **to shine or be divine**. A **Dev** is someone who possesses great knowledge, wisdom, and higher qualities. In the Bhagavad Gita (16.6):
+To understand Shiva’s legacy better, let’s first explore some important terms found in scriptures. The word **Dev** comes from the Sanskrit root **"Div"**, meaning **to shine or be divine**. A **Dev** is someone who possesses great knowledge, wisdom, and higher qualities. In the Bhagavad Gita (16.6):
 
 > द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च।
 
 Meaning: "There are two types of beings in this world—the divine (Daivic) and the demonic (Asuric)." Here, **Dev** represents truth, righteousness, and wisdom. In simple terms, **a Dev is an enlightened being with spiritual power**.
 
-## Ishwar (ईश्वर)
+## Ishwar
 
-**Ishwar** means **the supreme ruler or controller**. It comes from **"Ish" (ईश)**, meaning **to command or govern**. In Patanjali’s Yoga Sutras (1.24):
+**Ishwar** means **the supreme ruler or controller**. It comes from **"Ish"**, meaning **to command or govern**. In Patanjali’s Yoga Sutras (1.24):
 
 > क्लेशकर्मविपाकाशयैरपरामृष्टः पुरुषविशेषः ईश्वरः।
 
 Meaning: Ishwar is beyond suffering, actions, and their results.
-In the Bhagavad Gita (18.61):**
+In the Bhagavad Gita (18.61):
 *"Ishwar resides in the hearts of all beings, O Arjuna"*.
 Ishwar refers to the supreme power that governs everything.
 
