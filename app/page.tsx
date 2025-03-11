@@ -76,7 +76,7 @@ export default async function HomePage() {
                         <div
                             key={index}
                             className="flex w-full items-center gap-4 overflow-hidden">
-                            <Link href={article.link} className="group relative flex h-32 w-2/5 cursor-pointer items-center justify-center overflow-hidden rounded-lg">
+                            <Link href={article.link} className="select-none group relative flex h-32 w-2/5 cursor-pointer items-center justify-center overflow-hidden rounded-lg">
                                     <span className="absolute top-2 right-2 z-10 hidden size-8 items-center justify-center rounded-md bg-lime-50/60 text-lime-950 backdrop-blur-lg transition-all duration-500 ease-linear group-hover:flex">
                                         <GoArrowUpRight />
                                     </span>
@@ -90,13 +90,13 @@ export default async function HomePage() {
                                     />
                             </Link>
                             <Link href={article.link} className="w-3/5">
-                                    <h3 className="line-clamp-2 md:line-clamp-3 font-semibold">
+                                    <h3 className="line-clamp-2 md:line-clamp-3 text-lime-950 selection:text-lime-50 selection:bg-lime-950 font-semibold">
                                         {article.title}
                                     </h3>
-                                    <p className="line-clamp-2 text-sm text-lime-950/80">
+                                    <p className="line-clamp-2 text-sm election:text-lime-50 selection:bg-lime-950/80 text-lime-950/80">
                                         {article.description}
                                     </p>
-                                    <p className="text-sm text-lime-950/80">
+                                    <p className="text-sm text-lime-950/80 election:text-lime-50 selection:bg-lime-950/80">
                                         {article.author} - {article.date}
                                     </p>
                             </Link>

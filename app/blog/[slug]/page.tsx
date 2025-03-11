@@ -19,9 +19,13 @@ interface Article {
 }
 
 // Function to generate metadata dynamically
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params;
-    const blogItem = await getMarkdownData(slug);
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+    const { slug } = await params
+    const blogItem = await getMarkdownData(slug)
 
     if (!blogItem) {
         return {
@@ -30,9 +34,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         }
     }
 
-    const truncatedDescription = blogItem.description.length > 150
-        ? blogItem.description.slice(0, 147) + "..."
-        : blogItem.description
+    const truncatedDescription =
+        blogItem.description.length > 150
+            ? blogItem.description.slice(0, 147) + "..."
+            : blogItem.description
 
     return {
         title: `${blogItem.title} - Satya Vivechan`,
@@ -49,6 +54,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 },
             ],
             type: "article",
+        },
+        twitter: {
+            card: "summary_large_image",
+            site: `https://satyavivechan.live/blog/${slug}`,
+            title: `${blogItem.title} - Satya Vivechan`,
+            description: truncatedDescription,
         },
         alternates: {
             canonical: `/blog/${slug}`,
@@ -68,9 +79,13 @@ export async function generateStaticParams() {
     }))
 }
 
-export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params; // Ensure params is awaited
-    const blogItem = await getMarkdownData(slug);
+export default async function Page({
+    params,
+}: {
+    params: Promise<{ slug: string }>
+}) {
+    const { slug } = await params // Ensure params is awaited
+    const blogItem = await getMarkdownData(slug)
 
     if (!blogItem) {
         return <h1>Blog not found</h1>
