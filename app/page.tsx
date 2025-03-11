@@ -90,7 +90,7 @@ export default async function HomePage() {
                                     />
                             </Link>
                             <Link href={article.link} className="w-3/5">
-                                    <h3 className="line-clamp-3 font-semibold">
+                                    <h3 className="line-clamp-2 md:line-clamp-3 font-semibold">
                                         {article.title}
                                     </h3>
                                     <p className="line-clamp-2 text-sm text-lime-950/80">
