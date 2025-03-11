@@ -29,10 +29,7 @@ Meaning: "There are two types of beings in this world—the divine (Daivic) and 
 
 > क्लेशकर्मविपाकाशयैरपरामृष्टः पुरुषविशेषः ईश्वरः।
 
-Meaning: Ishwar is beyond suffering, actions, and their results.
-In the Bhagavad Gita (18.61):
-*"Ishwar resides in the hearts of all beings, O Arjuna"*.
-Ishwar refers to the supreme power that governs everything.
+Meaning: **Ishwar is beyond suffering, actions, and their results**. In the Bhagavad Gita (18.61): **Ishwar resides in the hearts of all beings, O Arjuna**. Ishwar refers to the supreme power that governs everything.
 
 ## Lord Shiva’s Qualities and Scientific Outlook
 
