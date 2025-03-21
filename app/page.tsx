@@ -46,6 +46,15 @@ export default async function HomePage() {
                 <aside className="w-full space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6">
                     {[
                         {
+                            title: "The Origin of Mother Ganga: Popular Stories & Logical Truth",
+                            description:
+                            "This article takes you on a journey through the historical and scriptural origins of Mother Ganga, exploring references from the Ramayana.",
+                            image: "/images/ganga.jpg",
+                            author: "Eshan Singh",
+                            date: "11 March, 2025",
+                            link: "/blog/the-origin-of-mother-ganga-popular-stories-and-logical-truths",
+                        },
+                        {
                             title: "Lord Shiva: The Historical & Scriptural Legacy of Mahadev",
                             description:
                                 "This article explores Lord Shiva's historical andscriptural significance, referencing texts like the Mahabharata and Shanti Parva.",
@@ -53,15 +62,6 @@ export default async function HomePage() {
                             author: "Eshan Singh",
                             date: "26 Feburary, 2025",
                             link: "/blog/lord-shiva-the-historical-and-scriptural-legacy-of-mahadev"
-                        },
-                        {
-                            title: "Lord Hanuman: The History, His True Form—Monkey or Human",
-                            description:
-                                "Was Lord Hanuman a monkey or a human? Explore his history, true form, and revelations from Valmiki Ramayana in this in-depth analysis.",
-                            image: "/images/hanuman.jpg",
-                            author: "Eshan Singh",
-                            date: "Coming Soon",
-                            link: "#",
                         },
                         {
                             title: "Lord Krishna: His True Identity, Was Radha Real & Was He a Romantic Figure",
@@ -75,7 +75,7 @@ export default async function HomePage() {
                     ].map((article, index) => (
                         <div
                             key={index}
-                            className="flex w-full items-center gap-4 overflow-hidden">
+                            className="group flex w-full items-center gap-4 overflow-hidden">
                             <Link href={article.link} className="select-none group relative flex h-32 w-2/5 cursor-pointer items-center justify-center overflow-hidden rounded-lg">
                                     <span className="absolute top-2 right-2 z-10 hidden size-8 items-center justify-center rounded-md bg-lime-50/60 text-lime-950 backdrop-blur-lg transition-all duration-500 ease-linear group-hover:flex">
                                         <GoArrowUpRight />
@@ -86,7 +86,7 @@ export default async function HomePage() {
                                         width={0}
                                         sizes="100vw"
                                         alt={article.title}
-                                        className="h-full w-full rounded-lg object-cover transition-transform duration-500 ease-linear hover:scale-125"
+                                        className="h-full w-full rounded-lg object-cover transition-transform duration-500 ease-linear group-hover:scale-105"
                                     />
                             </Link>
                             <Link href={article.link} className="w-3/5">

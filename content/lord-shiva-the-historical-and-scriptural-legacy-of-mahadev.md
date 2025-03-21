@@ -11,7 +11,9 @@ image: "/images/shiva.jpg"
 
 Lord Shiva is referred to as **Umāpati** (the husband of Goddess Uma) and **Bhūtapati** (the lord of all beings). In the Shanti Parva (*Mokshadharma Parva, Chapter 349, Verse 67*) of the Mahabharata, he is described as the **son or descendant of Sage Brahma**.
 
-> उमापतिर्भूतपतिः श्री कण्ठो ब्रह्मणः सुतः ।। उक्तवानिदमव्यग्रो ज्ञानं पाशुपतं शिवः
+```txt
+उमापतिर्भूतपतिः श्री कण्ठो ब्रह्मणः सुतः ।। उक्तवानिदमव्यग्रो ज्ञानं पाशुपतं शिवः
+```
 
 His famous **Pāshupata Astra** was unparalleled in the entire universe. There was no weapon on earth capable of countering or destroying it. A study of the Mahabharata reveals the extraordinary personality of Lord Shiva—he was an extremely detached ascetic, always immersed in yogic meditation, completely self-controlled despite being married, and possessed of divine abilities such as the power of aerial travel (ākāśagamana).
 
@@ -19,7 +21,9 @@ His famous **Pāshupata Astra** was unparalleled in the entire universe. There w
 
 To understand Shiva’s legacy better, let’s first explore some important terms found in scriptures. The word **Dev** comes from the Sanskrit root **"Div"**, meaning **to shine or be divine**. A **Dev** is someone who possesses great knowledge, wisdom, and higher qualities. In the Bhagavad Gita (16.6):
 
-> द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च।
+```txt
+द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च।
+```
 
 Meaning: "There are two types of beings in this world—the divine (Daivic) and the demonic (Asuric)." Here, **Dev** represents truth, righteousness, and wisdom. In simple terms, **a Dev is an enlightened being with spiritual power**.
 
@@ -27,7 +31,9 @@ Meaning: "There are two types of beings in this world—the divine (Daivic) and 
 
 **Ishwar** means **the supreme ruler or controller**. It comes from **"Ish"**, meaning **to command or govern**. In Patanjali’s Yoga Sutras (1.24):
 
-> क्लेशकर्मविपाकाशयैरपरामृष्टः पुरुषविशेषः ईश्वरः।
+```txt
+क्लेशकर्मविपाकाशयैरपरामृष्टः पुरुषविशेषः ईश्वरः।
+```
 
 Meaning: **Ishwar is beyond suffering, actions, and their results**. In the Bhagavad Gita (18.61): **Ishwar resides in the hearts of all beings, O Arjuna**. Ishwar refers to the supreme power that governs everything.
 
@@ -81,21 +87,29 @@ This is a symbolic way of saying that Shiva’s anger led to physical distress a
 ## Ayurveda and Lord Shiva’s Connection
 
 In ancient Ayurveda texts, before starting a healing process, the names of great sages and gods are remembered for blessings. A verse from Sushruta Sutrasthan 43 says:
-> ब्रह्मदक्षाश्विरुद्रेन्द्रभूचन्द्राकोनिलानलाः। ऋषयः सौषधिग्रामाः भूतसंघाश्च पान्तु ते ॥
+
+```txt
+ब्रह्मदक्षाश्विरुद्रेन्द्रभूचन्द्राकोनिलानलाः। ऋषयः सौषधिग्रामाः भूतसंघाश्च पान्तु ते ॥
+```
+
 Meaning: "May Brahma, Daksha, Ashwini Kumars, Rudra (Shiva), Indra, Earth, Wind, Fire, and the great sages protect and heal you." This shows that Shiva was considered a great healer in Ayurveda traditions.
 
 ## Shiva’s Role in Rajdharma (Shanti Parva 58.2)
 
-According to Shanti Parva (Chapter 58, Verse 2), Lord Vishalaksha Shiva was one of the great teachers of Rajdharma (the science of governance). The verse states:
-> विशालाक्षश्च भगवान् काव्यश्चैव महातपाः। सहस्राक्षो महेन्द्रश्च तथा प्राचेतसो मनुः॥
+According to **Shanti Parva (Chapter 58, Verse 2)**, Lord Vishalaksha Shiva was one of the great teachers of Rajdharma (the science of governance). The verse states:
+
+```txt
+विशालाक्षश्च भगवान् काव्यश्चैव महातपाः। सहस्राक्षो महेन्द्रश्च तथा प्राचेतसो मनुः॥
+```
+
 Meaning: Apart from others, Vishalaksha Shiva, the great ascetic Shukracharya, Indra, and Manu, were all great teachers of political science and governance.
 
 ## The Two Traditions of Sanskrit Grammar
 
 There are two main traditions of Sanskrit grammar:
 
-+ Aindra Grammar (Indra’s Tradition)
-+ Maheshwara Grammar (Shiva’s Tradition)
+- Aindra Grammar (Indra’s Tradition)
+- Maheshwara Grammar (Shiva’s Tradition)
 
 Kantara Grammar is based on Indra’s tradition. Panini composed Ashtadhyayi based on Maheshwara Grammar (Shiva’s tradition). This means Shiva played a crucial role in shaping Sanskrit grammar.
 

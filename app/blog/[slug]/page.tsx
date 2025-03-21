@@ -10,15 +10,10 @@ import InstagramShareButton from "@/components/ui/InstagramShareButton"
 import ShareLinkButton from "@/components/ui/ShareLinkButton"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
+import rehypeRaw from "rehype-raw" // Enables HTML support in Markdown
 import Header from "@/components/menus/Header"
 
-interface Article {
-    heading: string
-    content: string | string[]
-    reference?: string
-}
-
-// Function to generate metadata dynamically
+// Generate Metadata for SEO
 export async function generateMetadata({
     params,
 }: {
@@ -70,6 +65,7 @@ export async function generateMetadata({
     }
 }
 
+// Generate Static Params for Next.js
 export async function generateStaticParams() {
     const postsDirectory = path.join(process.cwd(), "content")
     const filenames = fs.readdirSync(postsDirectory)
@@ -79,12 +75,13 @@ export async function generateStaticParams() {
     }))
 }
 
+// Blog Page Component
 export default async function Page({
     params,
 }: {
     params: Promise<{ slug: string }>
 }) {
-    const { slug } = await params // Ensure params is awaited
+    const { slug } = await params
     const blogItem = await getMarkdownData(slug)
 
     if (!blogItem) {
@@ -124,73 +121,83 @@ export default async function Page({
                             </p>
                         </div>
                         <div className="flex w-full max-w-4xl flex-col items-start justify-start px-2">
-                            {(blogItem.article as Article[]).map(
-                                (article, index) => (
-                                    <div
-                                        key={index}
-                                        className="my-4 text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50">
-                                        <h2 className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50">
-                                            {article.heading}
-                                        </h2>
-
-                                        <div className="prose prose-lg my-2">
-                                            {Array.isArray(article.content) ? (
-                                                article.content.map(
-                                                    (para, i) => (
-                                                        <div
-                                                            key={i}
-                                                            className="my-2">
-                                                            <ReactMarkdown
-                                                                remarkPlugins={[
-                                                                    remarkGfm,
-                                                                ]}>
-                                                                {para}
-                                                            </ReactMarkdown>
-
-                                                            {i ===
-                                                                Math.floor(
-                                                                    (article
-                                                                        .content
-                                                                        .length -
-                                                                        1) /
-                                                                        2
-                                                                ) &&
-                                                                article.reference && (
-                                                                    <blockquote className="font-hindi my-4 w-full items-center bg-lime-100/60 p-4 text-center">
-                                                                        <ReactMarkdown>
-                                                                            {
-                                                                                article.reference
-                                                                            }
-                                                                        </ReactMarkdown>
-                                                                    </blockquote>
-                                                                )}
-                                                        </div>
-                                                    )
-                                                )
-                                            ) : (
-                                                <>
-                                                    <ReactMarkdown
-                                                        remarkPlugins={[
-                                                            remarkGfm,
-                                                        ]}>
-                                                        {article.content}
-                                                    </ReactMarkdown>
-
-                                                    {article.reference && (
-                                                        <blockquote className="font-hindi my-4 w-full items-center bg-lime-100/60 p-4 text-center">
-                                                            <ReactMarkdown>
-                                                                {
-                                                                    article.reference
-                                                                }
-                                                            </ReactMarkdown>
-                                                        </blockquote>
-                                                    )}
-                                                </>
-                                            )}
-                                        </div>
+                            {blogItem.article.map((article, index) => (
+                                <div
+                                    key={index}
+                                    className="my-4 text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 w-full">
+                                    <h2 className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50">
+                                        {article.heading}
+                                    </h2>
+                                    <div className="prose prose-lg my-2">
+                                        <ReactMarkdown
+                                            remarkPlugins={[remarkGfm]}
+                                            // rehypePlugins={[rehypeRaw]}
+                                            components={{
+                                                h1: ({...props }) => (
+                                                    <h1
+                                                        className="text-3xl font-bold text-lime-950"
+                                                        {...props}
+                                                    />
+                                                ),
+                                                h2: ({...props }) => (
+                                                    <h2
+                                                        className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50"
+                                                        {...props}
+                                                    />
+                                                ),
+                                                h3: ({...props }) => (
+                                                    <h3
+                                                        className="my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50"
+                                                        {...props}
+                                                    />
+                                                ),
+                                                p: ({...props }) => (
+                                                    <p
+                                                        className="my-2 text-base leading-relaxed text-lime-900"
+                                                        {...props}
+                                                    />
+                                                ),
+                                                ul: ({...props }) => (
+                                                    <ul
+                                                        className="my-2 list-inside list-disc text-lime-900"
+                                                        {...props}
+                                                    />
+                                                ),
+                                                ol: ({...props }) => (
+                                                    <ol
+                                                        className="my-2 list-inside list-decimal text-lime-900"
+                                                        {...props}
+                                                    />
+                                                ),
+                                                li: ({...props }) => (
+                                                    <li
+                                                        className="ml-5"
+                                                        {...props}
+                                                    />
+                                                ),
+                                                code: ({
+                                                    className,
+                                                    children,
+                                                    ...props
+                                                }) => (
+                                                    <code
+                                                        className={`overflow-x-scroll font-hindi my-4 w-full items-center bg-lime-100/60 p-4 text-center ${className || ""}`}
+                                                        {...props}>
+                                                        {children}
+                                                    </code>
+                                                ),
+                                                pre: ({...props }) => (
+                                                    <pre
+                                                        className="overflow-x-scroll font-hindi my-4 w-full items-center bg-lime-100/60 p-4 text-center"
+                                                        {...props}
+                                                    />
+                                                ),
+                                            }}>
+                                            {Array.isArray(article.content) ? article.content.join("\n") : article.content}
+                                        </ReactMarkdown>
                                     </div>
-                                )
-                            )}
+                                </div>
+                            ))}
                             <div className="mx-auto my-5 grid w-full grid-cols-2 items-start justify-start gap-2 md:grid-cols-4">
                                 <WhatsAppShareButton title={blogItem.title} />
                                 <InstagramShareButton />
