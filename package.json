@@ -2,11 +2,13 @@
   "name": "satya-vivechan",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "tsx scripts/generate-sitemap.ts"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -33,6 +35,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.0",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   }
 }
