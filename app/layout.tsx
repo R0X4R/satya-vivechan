@@ -19,30 +19,31 @@ const hindiFont = localFont({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://satyavivechan.live"),
-    title: "Satya Vivechan - सत्य विवेचन | Discover Ancient Wisdom & Dharma",
+    title: "Satya Vivechan - सत्य विवेचन | Ancient Hindu Scriptures & Wisdom",
     referrer: "origin-when-cross-origin",
     authors: [{ name: "Eshan Singh" }],
     description:
-  "Explore the wisdom of ancient scriptures, unravel the untold history of our ancestors, and learn timeless life lessons from Satya Vivechan's deeply researched storytelling."
+        "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
     twitter: {
         card: "summary_large_image",
         site: "@R0X4R",
-        title: "Satya Vivechan - सत्य विवेचन",
+        title: "Unveiling the True History of Hindu Scriptures - Satya Vivechan",
         description:
-            "Satya Vivechan unveils the real history of our ancestors and gods through deeply researched, scripture-based storytelling, sharing wisdom, dharma, and life lessons.",
+            "Deeply researched articles on Hindu history, ancient scriptures, and divine wisdom from Ramayana, Mahabharata, and Vedas.",
     },
     creator: "Eshan Singh",
     openGraph: {
-        title: "Satya Vivechan - सत्य विवेचन",
+        title: "Satya Vivechan - सत्य विवेचन | Ancient Hindu Scriptures & Wisdom",
         description:
-            "Satya Vivechan unveils the real history of our ancestors and gods through deeply researched, scripture-based storytelling, sharing wisdom, dharma, and life lessons.",
+            "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
         url: "https://satyavivechan.live",
         siteName: "Satya Vivechan",
         images: [
             {
-                url: "https://satyavivechan.live/images/logo.png",
+                url: "https://satyavivechan.live/images/satya-vivechan-og-image.png",
                 width: 1200,
                 height: 630,
+                alt: "Satya Vivechan - Unveiling Hindu History & Scriptures",
             },
         ],
         locale: "en_US",
@@ -64,9 +65,9 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "/",
         languages: {
-          'en-US': '/',
-        }
-      },
+            "en-US": "https://satyavivechan.live/",
+        },
+    },
     icons: {
         icon: "/images/favicon-32x32",
         shortcut: "/images/favicon-16x16.png",

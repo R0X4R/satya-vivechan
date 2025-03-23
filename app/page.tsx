@@ -6,6 +6,75 @@ import RecentHeroPost from "@/components/ui/RecentHeroPost"
 import DailyVedicQuote from "@/components/blocks/VedicQuotes"
 import Link from "next/link"
 
+interface CustomMetadata {
+    title: string
+    description: string
+    alternates?: {
+        canonical?: string
+        languages?: {
+            "en-US": string
+        }
+    }
+    twitter?: {
+        card: string
+        site: string
+        title: string
+        description: string
+    }
+    creator?: string
+    openGraph?: {
+        title: string
+        description: string
+        url: string
+        siteName: string
+        images: {
+            url: string
+            width: number
+            height: number
+            alt: string
+        }[]
+        locale: string
+        type: string
+    }
+}
+
+export const metadata: CustomMetadata = {
+    title: "Satya Vivechan - सत्य विवेचन | Ancient Hindu Scriptures & Wisdom",
+    description:
+        "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
+    alternates: {
+        canonical: "/",
+        languages: {
+            "en-US": "https://satyavivechan.live/",
+        },
+    },
+    twitter: {
+        card: "summary_large_image",
+        site: "@R0X4R",
+        title: "Unveiling the True History of Hindu Scriptures - Satya Vivechan",
+        description:
+            "Deeply researched articles on Hindu history, ancient scriptures, and divine wisdom from Ramayana, Mahabharata, and Vedas.",
+    },
+    creator: "Eshan Singh",
+    openGraph: {
+        title: "Satya Vivechan - सत्य विवेचन | Ancient Hindu Scriptures & Wisdom",
+        description:
+            "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
+        url: "https://satyavivechan.live",
+        siteName: "Satya Vivechan",
+        images: [
+            {
+                url: "https://satyavivechan.live/images/satya-vivechan-og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Satya Vivechan - Unveiling Hindu History & Scriptures",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+}
+
 export default async function HomePage() {
     const posts = await getAllPosts()
     const sortedPosts = posts.sort((a, b) => {
@@ -48,7 +117,7 @@ export default async function HomePage() {
                         {
                             title: "The Origin of Mother Ganga: Popular Stories & Logical Truth",
                             description:
-                            "This article takes you on a journey through the historical and scriptural origins of Mother Ganga, exploring references from the Ramayana.",
+                                "This article takes you on a journey through the historical and scriptural origins of Mother Ganga, exploring references from the Ramayana.",
                             image: "/images/ganga.jpg",
                             author: "Eshan Singh",
                             date: "11 March, 2025",
@@ -61,7 +130,7 @@ export default async function HomePage() {
                             image: "/images/shiva.jpg",
                             author: "Eshan Singh",
                             date: "26 Feburary, 2025",
-                            link: "/blog/lord-shiva-the-historical-and-scriptural-legacy-of-mahadev"
+                            link: "/blog/lord-shiva-the-historical-and-scriptural-legacy-of-mahadev",
                         },
                         {
                             title: "Lord Krishna: His True Identity, Was Radha Real & Was He a Romantic Figure",
@@ -76,29 +145,31 @@ export default async function HomePage() {
                         <div
                             key={index}
                             className="group flex w-full items-center gap-4 overflow-hidden">
-                            <Link href={article.link} className="select-none group relative flex h-32 w-2/5 cursor-pointer items-center justify-center overflow-hidden rounded-lg">
-                                    <span className="absolute top-2 right-2 z-10 hidden size-8 items-center justify-center rounded-md bg-lime-50/60 text-lime-950 backdrop-blur-lg transition-all duration-500 ease-linear group-hover:flex">
-                                        <GoArrowUpRight />
-                                    </span>
-                                    <Image
-                                        src={article.image}
-                                        height={0}
-                                        width={0}
-                                        sizes="100vw"
-                                        alt={article.title}
-                                        className="h-full w-full rounded-lg object-cover transition-transform duration-500 ease-linear group-hover:scale-105"
-                                    />
+                            <Link
+                                href={article.link}
+                                className="group relative flex h-32 w-2/5 cursor-pointer items-center justify-center overflow-hidden rounded-lg select-none">
+                                <span className="absolute top-2 right-2 z-10 hidden size-8 items-center justify-center rounded-md bg-lime-50/60 text-lime-950 backdrop-blur-lg transition-all duration-500 ease-linear group-hover:flex">
+                                    <GoArrowUpRight />
+                                </span>
+                                <Image
+                                    src={article.image}
+                                    height={0}
+                                    width={0}
+                                    sizes="100vw"
+                                    alt={article.title}
+                                    className="h-full w-full rounded-lg object-cover transition-transform duration-500 ease-linear group-hover:scale-105"
+                                />
                             </Link>
                             <Link href={article.link} className="w-3/5">
-                                    <h3 className="line-clamp-2 md:line-clamp-3 text-lime-950 selection:text-lime-50 selection:bg-lime-950 font-semibold">
-                                        {article.title}
-                                    </h3>
-                                    <p className="line-clamp-2 text-sm election:text-lime-50 selection:bg-lime-950/80 text-lime-950/80">
-                                        {article.description}
-                                    </p>
-                                    <p className="text-sm text-lime-950/80 election:text-lime-50 selection:bg-lime-950/80">
-                                        {article.author} - {article.date}
-                                    </p>
+                                <h3 className="line-clamp-2 font-semibold text-lime-950 selection:bg-lime-950 selection:text-lime-50 md:line-clamp-3">
+                                    {article.title}
+                                </h3>
+                                <p className="election:text-lime-50 line-clamp-2 text-sm text-lime-950/80 selection:bg-lime-950/80">
+                                    {article.description}
+                                </p>
+                                <p className="text-sm text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50">
+                                    {article.author} - {article.date}
+                                </p>
                             </Link>
                         </div>
                     ))}
