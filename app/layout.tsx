@@ -19,11 +19,11 @@ const hindiFont = localFont({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://satyavivechan.live"),
-    title: "Satya Vivechan - सत्य विवेचन",
+    title: "Satya Vivechan - सत्य विवेचन | Discover Ancient Wisdom & Dharma",
     referrer: "origin-when-cross-origin",
     authors: [{ name: "Eshan Singh" }],
     description:
-        "Satya Vivechan unveils the real history of our ancestors and gods through deeply researched, scripture-based storytelling, sharing wisdom, dharma, and life lessons.",
+  "Explore the wisdom of ancient scriptures, unravel the untold history of our ancestors, and learn timeless life lessons from Satya Vivechan's deeply researched storytelling."
     twitter: {
         card: "summary_large_image",
         site: "@R0X4R",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         siteName: "Satya Vivechan",
         images: [
             {
-                url: "/images/logo.png",
+                url: "https://satyavivechan.live/images/logo.png",
                 width: 1200,
                 height: 630,
             },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
         googleBot: {
             index: true,
             follow: true,
-            noimageindex: true,
+            noimageindex: false,
             "max-video-preview": -1,
             "max-image-preview": "large",
             "max-snippet": -1,
