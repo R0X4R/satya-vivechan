@@ -19,7 +19,7 @@ const hindiFont = localFont({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://satyavivechan.live"),
-    title: "Satya Vivechan - सत्य विवेचन | Ancient Hindu Scriptures & Wisdom",
+    title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
     referrer: "origin-when-cross-origin",
     authors: [{ name: "Eshan Singh" }],
     description:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     },
     creator: "Eshan Singh",
     openGraph: {
-        title: "Satya Vivechan - सत्य विवेचन | Ancient Hindu Scriptures & Wisdom",
+        title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
         description:
             "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
         url: "https://satyavivechan.live",
