@@ -43,7 +43,7 @@ export async function generateMetadata({
             url: `https://satyavivechan.live/blog/${slug}`,
             images: [
                 {
-                    url: blogItem.image ?? "/images/logo.png",
+                    url: blogItem.image ?? "/images/satya-vivechan-og-image.png",
                     width: 1200,
                     height: 630,
                 },
