@@ -3,11 +3,11 @@ id: 3
 author: "Eshan Singh"
 date: "21 March, 2025"
 title: "Lord Hanuman: The History, His True Form—Monkey or Human"
-description: "This article debunks the myth that Lord Hanuman was a monkey and provides evidence from the Valmiki Ramayana proving he was a human from a warrior tribe called Vanaras. It highlights Hanuman's fluency in Sanskrit, ability to disguise as a Brahmin, and participation in a structured kingdom—traits impossible for a monkey. The article also notes that Valmiki referred to Kishkindha's people as Jan (humans) and their women as Stri, reinforcing their human identity."
+description: "This article debunks the myth that Lord Hanuman was a monkey and provides evidence from the Valmiki Ramayan proving he was a human from a warrior tribe called Vanaras. It highlights Hanuman's fluency in Sanskrit, ability to disguise as a Brahmin, and participation in a structured kingdom—traits impossible for a monkey. The article also notes that Valmiki referred to Kishkindha's people as Jan (humans) and their women as Stri, reinforcing their human identity."
 image: "/images/hanuman.jpg"
 ---
 
-**Lord Hanuman** is one of the *most powerful* and *intelligent* characters in the **Ramayana**. Many people wrongly believe he was a *monkey*, but when we read the **Valmiki Ramayana** carefully, we find clear proof that he was not *a monkey but a human* from a special forest tribe called **Vanaras**.
+**Lord Hanuman** is one of the *most powerful* and *intelligent* characters in the **Ramayan**. Many people wrongly believe he was a *monkey*, but when we read the **Valmiki Ramayan** carefully, we find clear proof that he was not *a monkey but a human* from a special forest tribe called **Vanaras**.
 
 ## Who Were the Vanaras
 
@@ -27,7 +27,7 @@ Meaning: Those who dwell in the forest are called Vanaras. The word Vanara origi
 
 ## Vanaras Wore Disguises
 
-Some Vanaras wore **tails** and **headdresses** like monkeys, just as some tribal communities today **wear horns** on their heads. But this does not mean they were monkeys. To verify this, we need to refer to the **Kishkindha Kanda of the Valmiki Ramayana (Sarga 2, Verse 24)**, where **Lord Sugriva** instructed **Lord Hanuman**
+Some Vanaras wore **tails** and **headdresses** like monkeys, just as some tribal communities today **wear horns** on their heads. But this does not mean they were monkeys. To verify this, we need to refer to the **Kishkindha Kanda of the Valmiki Ramayan (Sarga 2, Verse 24)**, where **Lord Sugriva** instructed **Lord Hanuman**
 
 ```txt
  तौ त्वया प्राकृतेनेव गत्वा ज्ञेयौ प्लवंगम।
@@ -76,7 +76,7 @@ In the **Valmiki Ramayan**, the inhabitants of **Kishkindha** were referred to a
 
 ## Hanuman Could Speak Sanskrit Fluently
 
-Monkeys cannot speak, but Hanuman spoke in perfect Sanskrit. When he met Sita in Lanka, she was shocked that a Vanara could speak like a wise man.
+Monkeys cannot speak, but Hanuman spoke in perfect Sanskrit. When he met **Mother Sita** in Lanka, she was shocked that a Vanara could speak like a wise man.
 
 ```txt
 सुखोष्ठ: सुखदन्तश्च सुखनास: सुखानन: । सुखललाटनेत्रश्च सुखश्रोत्रकपालवान्॥
@@ -97,6 +97,38 @@ Lord Ram acknowledges that Hanuman's way of speaking reflects deep knowledge and
 ```
 
 Meaning: "**O mighty Hanuman! Your speech is righteous, logical, and clear. It is pleasant to the ears, beneficial, and filled with truth**". Lord Ram praises Hanuman’s speech for being truthful, dharmic, and beneficial. These shlokas highlight how Lord Ram deeply admired Hanuman’s wisdom, intelligence, and knowledge of the scriptures.
+
+## Hanuman’s Tail Was an Ornament, Not a Real Tail
+
+One of the biggest misconceptions about Hanuman is that he had a real, biological tail. However, a closer look at the **Valmiki Ramayan** suggests that Hanuman and the Vanaras wore tail-like ornaments or extensions as part of their traditional attire.
+
+In the Sundar Kanda when **Hanuman’s tail** was set on fire by **Ravana’s soldiers**, **Mother Sita** prayed for it to remain unburned:
+
+```txt
+अनलश्चाप्यनाश: स्यात्तैलवृक्षप्रसादनात्।
+```
+
+According to **(Sundar Kanda 53.4)**: "**May the fire not harm Hanuman’s tail, as it is soaked in oil and prayers protect it.**"
+
+This verse suggests that the tail was something external that could be **oiled** and **burned**, much like **a cloth** or **an ornament**. If it were a **biological tail**, it would not require oil treatment, nor would it be set on fire in the same manner.
+
+```txt
+कपीनां किल लाङ्गूलमिष्टं भवति भूषणम्
+```
+
+Additionally, in several instances, the Vanaras are described as wearing "**tail ornaments**", which were likely decorative extensions, similar to how tribal warriors in various cultures wear symbolic attire.
+
+## The Myth of Hanuman as an “Evolving Human” (Darwin’s Theory Misinterpretation)
+
+Some people claim that **Hanuman was a pre-human species** that had not fully **evolved into a modern human**. They use Darwin’s theory of evolution as evidence to suggest that **Vanaras** were **early human ancestors**. However, this argument is flawed for several reasons.
+
+Firstly, many **modern researchers have questioned Darwin’s theory**, pointing out its **inconsistencies** and **lack of direct fossil evidence** for gradual human evolution. But even if we accept Darwin’s theory, it only explains how apes could have evolved into humans. It does not explain other intelligent beings in the Ramayan, such as **Jambavan (the bear king)** or **Jatayu (the vulture who spoke and fought Ravana)**.
+
+If **Hanuman** was a "**half-evolved human**," then how do we explain **Jambavan**, who was a **bear** but had the **wisdom of a sage**? Or **Jatayu**, a **vulture who spoke fluently**, understood dharma, and bravely defended **Mother Sita**? These beings were not animals but **highly evolved humans** who dressed and identified with **their tribal cultures**.
+
+Even today, many **tribal communities wear costumes** and **accessories resembling animals**, just as the **Vanaras**, **Rikshas (bears)**, and **Pakshis (birds)** did in ancient times. Their **attire symbolized** their **strength**, **role**, or **connection to nature**, but it did not mean t**hey were literal animals**. Hanuman, Jambavan, and Jatayu were all extraordinary human beings with divine qualities, not part-animal, part-human creatures stuck in evolution.
+
+This once again proves that Hanuman was not a monkey but a powerful human warrior from a special forest tribe.
 
 ## Conclusion
 
