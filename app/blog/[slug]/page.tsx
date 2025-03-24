@@ -10,7 +10,7 @@ import InstagramShareButton from "@/components/ui/InstagramShareButton"
 import ShareLinkButton from "@/components/ui/ShareLinkButton"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
-import remarkBreaks from "remark-breaks";
+import remarkBreaks from "remark-breaks"
 import Header from "@/components/menus/Header"
 
 // Generate Metadata for SEO
@@ -55,6 +55,19 @@ export async function generateMetadata({
             site: `https://satyavivechan.live/blog/${slug}`,
             title: `${blogItem.title} - Satya Vivechan`,
             description: truncatedDescription,
+        },
+        robots: {
+            index: true,
+            follow: true,
+            nocache: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                noimageindex: false,
+                "max-video-preview": -1,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+            },
         },
         alternates: {
             canonical: `/blog/${slug}`,
@@ -103,7 +116,10 @@ export default async function Page({
                     </div>
                     <div className="group w-full cursor-pointer overflow-hidden">
                         <Image
-                            src={blogItem.image ?? "/images/satya-vivechan-og-image.png"}
+                            src={
+                                blogItem.image ??
+                                "/images/satya-vivechan-og-image.png"
+                            }
                             alt={blogItem.title}
                             sizes="100vw"
                             height={0}
@@ -130,7 +146,10 @@ export default async function Page({
                                     </h2>
                                     <div className="prose prose-lg my-2">
                                         <ReactMarkdown
-                                            remarkPlugins={[remarkGfm, remarkBreaks]}
+                                            remarkPlugins={[
+                                                remarkGfm,
+                                                remarkBreaks,
+                                            ]}
                                             // rehypePlugins={[rehypeRaw]}
                                             components={{
                                                 h1: ({ ...props }) => (
