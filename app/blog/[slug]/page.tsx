@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+// import Head from "next/head"
 import fs from "fs"
 import path from "path"
 import React from "react"
@@ -99,6 +100,33 @@ export default async function Page({
 
     if (!blogItem) {
         return <h1>Blog not found</h1>
+    }
+
+    const jsonLdData = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: blogItem.title,
+        description: blogItem.description,
+        datePublished: blogItem.date,
+        dateModified: blogItem.date,
+        author: {
+            "@type": "Person",
+            name: "Eshan Singh",
+        },
+        publisher: {
+            "@type": "Organization",
+            name: "Satya Vivechan",
+            logo: {
+                "@type": "ImageObject",
+                url: "https://satyavivechan.live/images/logo.png",
+            },
+        },
+        mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": `https://satyavivechan.live/blog/${slug}`,
+        },
+        image: blogItem.image ?? "https://satyavivechan.live/images/logo.png",
+        url: `https://satyavivechan.live/blog/${slug}`,
     }
 
     return (
