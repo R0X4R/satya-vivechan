@@ -31,8 +31,8 @@ export async function generateMetadata({
     }
 
     const truncatedDescription =
-        blogItem.description.length > 150
-            ? blogItem.description.slice(0, 147) + "..."
+        blogItem.description.length > 160
+            ? blogItem.description.slice(0, 157) + "..."
             : blogItem.description
 
     return {
@@ -131,6 +131,10 @@ export default async function Page({
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+            />
             <Header />
             <main className="flex h-full w-full flex-col items-center justify-center bg-lime-50 backdrop-blur-sm">
                 <section className="flex w-full flex-col items-center justify-center space-y-5 py-24 md:py-36">
