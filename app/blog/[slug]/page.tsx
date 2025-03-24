@@ -103,7 +103,7 @@ export default async function Page({
                     </div>
                     <div className="group w-full cursor-pointer overflow-hidden">
                         <Image
-                            src={blogItem.image ?? "/images/logo.png"}
+                            src={blogItem.image ?? "/images/satya-vivechan-og-image.png"}
                             alt={blogItem.title}
                             sizes="100vw"
                             height={0}
