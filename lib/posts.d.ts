@@ -19,6 +19,7 @@ interface Post {
     author?: string;
     description: string;
     image?: string;
+    opengraph?: string;
     content: string;
     article: { heading: string; content: string[]; reference?: string }[];
     contentHtml: string;

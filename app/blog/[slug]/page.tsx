@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-// import Head from "next/head"
 import fs from "fs"
 import path from "path"
 import React from "react"
@@ -44,7 +43,7 @@ export async function generateMetadata({
             url: `https://satyavivechan.live/blog/${slug}`,
             images: [
                 {
-                    url: blogItem.image ?? "/images/logo.png",
+                    url: blogItem.opengraph ?? "/images/satya-vivechan-og-image.png",
                     width: 1200,
                     height: 630,
                 },
@@ -125,7 +124,7 @@ export default async function Page({
             "@type": "WebPage",
             "@id": `https://satyavivechan.live/blog/${slug}`,
         },
-        image: blogItem.image ?? "https://satyavivechan.live/images/logo.png",
+        image: blogItem.opengraph ?? "https://satyavivechan.live/images/satya-vivechan-og-image.png",
         url: `https://satyavivechan.live/blog/${slug}`,
     }
 
@@ -150,7 +149,7 @@ export default async function Page({
                         <Image
                             src={
                                 blogItem.image ??
-                                "/images/satya-vivechan-og-image.png"
+                                "/images/no-image-available.png"
                             }
                             alt={blogItem.title}
                             sizes="100vw"

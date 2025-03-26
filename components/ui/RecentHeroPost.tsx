@@ -28,8 +28,9 @@ const RecentHeroPost: React.FC<RecentHeroPostProps> = ({
                         sizes="100vw"
                         height={0}
                         width={0}
+                        title={title}
                         alt={title}
-                        className="h-500 w-full rounded-lg object-cover object-center transition-transform duration-500 ease-linear select-none group-hover:scale-110"
+                        className="h-500 w-full rounded-lg object-cover object-center transition-transform duration-500 ease-linear select-none group-hover:scale-105"
                     />
                 </div>
                 <div className="flex flex-col">

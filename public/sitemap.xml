@@ -4,23 +4,27 @@
     <url>
         <loc>https://satyavivechan.live/</loc>
         <lastmod>2025-03-21T18:58:30+00:00</lastmod>
+        <changefreq>daily</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://satyavivechan.live/blog/lord-hanuman-the-history-his-true-form-monkey-or-human</loc>
         <lastmod>2025-03-21T18:58:30+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
             https://satyavivechan.live/blog/the-origin-of-mother-ganga-popular-stories-and-logical-truths</loc>
         <lastmod>2025-03-21T18:58:30+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
             https://satyavivechan.live/blog/lord-shiva-the-historical-and-scriptural-legacy-of-mahadev</loc>
         <lastmod>2025-03-21T18:58:30+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
 </urlset>

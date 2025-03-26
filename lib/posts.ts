@@ -13,6 +13,7 @@ interface Post {
     author?: string
     description: string
     image?: string
+    opengraph?: string
     content: string
     article: { heading: string; content: string[]; reference?: string }[]
     contentHtml: string
@@ -35,8 +36,9 @@ export const getAllPosts = () => {
             title: data.title || "Untitled",
             date: data.date || "Unknown",
             author: data.author || "Unknown Author",
+            opengraph: data.opengraph || "/images/satya-vivechan-og-image.png",
             description: data.description || "No description available",
-            image: data.image || "/images/logo.png",
+            image: data.image || "images/satya-vivechan-og-image.png",
         }
     })
 }
@@ -97,6 +99,7 @@ export const getMarkdownData = async (slug: string): Promise<Post> => {
         title: data.title || "Untitled", // Ensure title exists
         date: data.date || "Unknown",
         image: data.image,
+        opengraph: data.opengraph,
         description: data.description || "No description available",
         content: await marked.parse(content),
         article: articleData,
