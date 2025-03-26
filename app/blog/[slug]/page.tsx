@@ -12,6 +12,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import remarkBreaks from "remark-breaks"
 import Header from "@/components/menus/Header"
+import AdComponent from "@/components/blocks/AdsComponent"
 
 // Generate Metadata for SEO
 export async function generateMetadata({
@@ -168,6 +169,7 @@ export default async function Page({
                             </p>
                         </div>
                         <div className="flex w-full max-w-4xl flex-col items-start justify-start px-2">
+                            <AdComponent/>
                             {blogItem.article.map((article, index) => (
                                 <div
                                     key={index}
