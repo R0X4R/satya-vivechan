@@ -31,10 +31,8 @@ const AdComponent = () => {
 
     return (
         <div className="my-4 flex w-full justify-center">
-            ad
             <ins
-                className="adsbygoogle mx-auto block w-full max-w-3xl"
-                style={{ height: "90px" }}
+                className="adsbygoogle mx-auto h-36 block w-full max-w-3xl"
                 data-ad-layout="in-article"
                 data-ad-format="fluid"
                 data-ad-client="ca-pub-5611152880244692"
