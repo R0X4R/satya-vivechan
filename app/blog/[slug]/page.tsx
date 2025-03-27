@@ -12,6 +12,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import remarkBreaks from "remark-breaks"
 import Header from "@/components/menus/Header"
+import rehypeRaw from "rehype-raw"
 import AdComponent from "@/components/blocks/AdsComponent"
 
 // Generate Metadata for SEO
@@ -44,7 +45,9 @@ export async function generateMetadata({
             url: `https://satyavivechan.live/blog/${slug}`,
             images: [
                 {
-                    url: blogItem.opengraph ?? "/images/satya-vivechan-og-image.png",
+                    url:
+                        blogItem.opengraph ??
+                        "/images/satya-vivechan-og-image.png",
                     width: 1200,
                     height: 630,
                 },
@@ -125,7 +128,9 @@ export default async function Page({
             "@type": "WebPage",
             "@id": `https://satyavivechan.live/blog/${slug}`,
         },
-        image: blogItem.opengraph ?? "https://satyavivechan.live/images/satya-vivechan-og-image.png",
+        image:
+            blogItem.opengraph ??
+            "https://satyavivechan.live/images/satya-vivechan-og-image.png",
         url: `https://satyavivechan.live/blog/${slug}`,
     }
 
@@ -169,7 +174,7 @@ export default async function Page({
                             </p>
                         </div>
                         <div className="flex w-full max-w-4xl flex-col items-start justify-start px-2">
-                            <AdComponent/>
+                            <AdComponent />
                             {blogItem.article.map((article, index) => (
                                 <div
                                     key={index}
@@ -183,7 +188,8 @@ export default async function Page({
                                                 remarkGfm,
                                                 remarkBreaks,
                                             ]}
-                                            // rehypePlugins={[rehypeRaw]}
+                                            rehypePlugins={[rehypeRaw]}
+                                            // allowDangerousHtml={true}
                                             components={{
                                                 h1: ({ ...props }) => (
                                                     <h1

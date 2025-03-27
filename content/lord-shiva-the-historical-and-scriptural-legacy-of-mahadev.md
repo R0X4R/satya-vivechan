@@ -112,7 +112,9 @@ There are two main traditions of Sanskrit grammar:
 - Aindra Grammar (Indra’s Tradition)
 - Maheshwara Grammar (Shiva’s Tradition)
 
-Kantara Grammar is based on Indra’s tradition. Panini composed Ashtadhyayi based on Maheshwara Grammar (Shiva’s tradition). This means Shiva played a crucial role in shaping Sanskrit grammar.
+###
+
+**Kantara Grammar** is based on Indra’s tradition. **Panini composed Ashtadhyayi** based on **Maheshwara Grammar** (Shiva’s tradition). This means Shiva played a crucial role in shaping Sanskrit grammar.
 
 ## The Historical Perspective on Shiva as Mahadev
 
