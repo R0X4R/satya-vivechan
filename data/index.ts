@@ -71,7 +71,7 @@ export const vedicQuotes = [
     {
         id: 11,
         mantra: "देव॑ सवितः॒ प्र सु॑व य॒ज्ञं प्र सु॑व य॒ज्ञप॑तिं॒ भगा॑य।दि॒व्यो ग॑न्ध॒र्वः॑ के॑त॒पू केतं॑ नः पुनातु वा॒चस्पति॒र्वाचं॑ नः स्वदतु",
-        refernce: "य 30.1",
+        reference: "य 30.1",
         meaning: "O Creator God, help our sacrifice succeed and bring prosperity. Let the protector of the earth cleanse our thoughts, and may the Lord of speech make our words kind and sweet.",
 
     },
