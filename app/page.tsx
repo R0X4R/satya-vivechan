@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/posts"
 import RecentHeroPost from "@/components/ui/RecentHeroPost"
 import LogoDiv from "@/components/blocks/LogoDiv"
 import ArticleCard from "@/components/blocks/ArticleCard"
+import type { Metadata } from "next"
 
 interface CustomMetadata {
     title: string
@@ -36,7 +37,7 @@ interface CustomMetadata {
     }
 }
 
-export const metadata: CustomMetadata = {
+export const metadata: Metadata = {
     title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
     description:
         "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
@@ -82,7 +83,7 @@ export default async function HomePage() {
     const recentArticles = sortedPosts.slice(1, 5)
 
     return (
-        <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col bg-lime-50 px-4 py-10 md:px-0 md:py-12">
+        <main className="mx-auto flex dark:bg-neutral-900 min-h-screen w-full max-w-7xl flex-col bg-lime-50 px-4 py-10 md:px-0 md:py-12">
             <LogoDiv />
             <div className="flex w-full flex-col gap-6 md:flex-row">
                 <div className="w-full md:w-2/3">
@@ -97,9 +98,9 @@ export default async function HomePage() {
                         />
                     )}
                 </div>
-                <aside className="w-full space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6">
+                <aside className="w-full space-y-6 dark:border-lime-100/20 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6">
                     <div className="items-start">
-                        <h2 className="text-3xl font-medium text-lime-950">
+                        <h2 className="selection:bg-lime-950 selection:text-lime-50 text-3xl font-medium dark:text-lime-300 text-lime-950">
                             Recent Posts
                         </h2>
                     </div>

@@ -13,9 +13,9 @@ export default function LogoDiv() {
                 className="select-none pointer-events-none h-full w-62 rounded-full object-cover"
                 alt="logo"
             />
-            <h1 className="flex flex-col items-center justify-center text-6xl font-black tracking-tighter text-lime-950 uppercase selection:bg-lime-950 selection:text-lime-50 md:text-8xl">
+            <h1 className="flex flex-col items-center justify-center text-6xl font-black tracking-tighter text-lime-950 uppercase selection:bg-lime-950 selection:text-lime-50 dark:text-lime-300 md:text-8xl">
                 Satya Vivechan
-                <span className="text-sm md:text-4xl font-normal tracking-wide text-lime-950/60">
+                <span className="text-sm md:text-4xl font-normal tracking-wide dark:text-lime-300/60 text-lime-950/60">
                     Unveiling Hindu History & Scriptures
                 </span>
             </h1>

@@ -34,11 +34,11 @@ const RecentHeroPost: React.FC<RecentHeroPostProps> = ({
                     />
                 </div>
                 <div className="flex flex-col">
-                    <h2 className="mt-4 text-2xl font-bold selection:bg-lime-900 selection:text-lime-50">{title}</h2>
-                    <p className="mt-2 line-clamp-2 text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50">
+                    <h2 className="mt-4 text-lime-950 text-2xl dark:text-lime-300 font-bold selection:bg-lime-900 selection:text-lime-50">{title}</h2>
+                    <p className="mt-2 line-clamp-2 dark:text-lime-100/80 text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50">
                         {description}
                     </p>
-                    <p className="mt-2 text-sm text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50">
+                    <p className="mt-2 text-sm text-lime-950/80 dark:text-lime-100/60 selection:bg-lime-900/80 selection:text-lime-50">
                         {author} - {date}
                     </p>
                 </div>

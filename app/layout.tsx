@@ -83,16 +83,17 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${bricolageSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased`}>
-                <ThemeProvider
-                    enableSystem={false}
-                    attribute="class"
-                    defaultTheme="light">
-                    <LenisProvider>
+                className={`${bricolageSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 dark:bg-neutral-900 antialiased`}>
+                <LenisProvider>
+                    <ThemeProvider
+                        enableSystem
+                        attribute="class"
+                        defaultTheme="dark"
+                        disableTransitionOnChange>
                         {children}
                         <Footer />
-                    </LenisProvider>
-                </ThemeProvider>
+                    </ThemeProvider>
+                </LenisProvider>
             </body>
         </html>
     )

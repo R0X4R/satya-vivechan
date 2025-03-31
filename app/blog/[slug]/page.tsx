@@ -141,7 +141,7 @@ export default async function Page({
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
             />
             <Header />
-            <main className="flex h-full w-full flex-col items-center justify-center bg-lime-50 backdrop-blur-sm">
+            <main className="flex h-full w-full flex-col items-center justify-center dark:bg-neutral-900 bg-lime-50 backdrop-blur-sm">
                 <section className="flex w-full flex-col items-center justify-center space-y-5 py-24 md:py-36">
                     <div
                         id="information"
@@ -166,10 +166,10 @@ export default async function Page({
                     </div>
                     <div className="mx-auto my-8 flex w-full max-w-5xl flex-col items-center justify-center px-4 md:max-w-7xl md:px-0">
                         <div className="mb-5 flex w-full max-w-4xl items-center justify-between px-2">
-                            <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50">
+                            <p className="dark:text-lime-100/80 text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50">
                                 Author: Eshan Singh
                             </p>
-                            <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50">
+                            <p className="dark:text-lime-100/80 text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50">
                                 Published: {blogItem.date}
                             </p>
                         </div>
@@ -179,7 +179,7 @@ export default async function Page({
                                 <div
                                     key={index}
                                     className="my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50">
-                                    <h2 className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50">
+                                    <h2 className="mt-2 mb-3 dark:text-lime-100/95 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50">
                                         {article.heading}
                                     </h2>
                                     <div className="prose prose-lg my-2">
@@ -193,43 +193,43 @@ export default async function Page({
                                             components={{
                                                 h1: ({ ...props }) => (
                                                     <h1
-                                                        className="text-3xl font-bold text-lime-950"
+                                                        className="text-3xl font-bold text-lime-950/80 selection:bg-lime-900/90 dark:text-lime-100/95 selection:text-lime-50"
                                                         {...props}
                                                     />
                                                 ),
                                                 h2: ({ ...props }) => (
                                                     <h2
-                                                        className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50"
+                                                        className="my-2 text-xl dark:text-lime-100/95 font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50"
                                                         {...props}
                                                     />
                                                 ),
                                                 h3: ({ ...props }) => (
                                                     <h3
-                                                        className="my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50"
+                                                        className="my-2 text-lg dark:text-lime-100/95 font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50"
                                                         {...props}
                                                     />
                                                 ),
                                                 p: ({ ...props }) => (
                                                     <p
-                                                        className="my-2 text-base leading-relaxed text-lime-900"
+                                                        className="dark:text-lime-100/60 my-2 text-base leading-relaxed text-lime-900"
                                                         {...props}
                                                     />
                                                 ),
                                                 ul: ({ ...props }) => (
                                                     <ul
-                                                        className="my-2 list-inside list-disc text-lime-900"
+                                                        className="dark:text-lime-100/60 my-2 list-inside list-disc text-lime-900"
                                                         {...props}
                                                     />
                                                 ),
                                                 ol: ({ ...props }) => (
                                                     <ol
-                                                        className="my-2 list-inside list-decimal text-lime-900"
+                                                        className="dark:text-lime-100/60 my-2 list-inside list-decimal text-lime-900"
                                                         {...props}
                                                     />
                                                 ),
                                                 li: ({ ...props }) => (
                                                     <li
-                                                        className="ml-5"
+                                                        className="dark:text-lime-100/60 ml-5"
                                                         {...props}
                                                     />
                                                 ),
@@ -246,7 +246,7 @@ export default async function Page({
                                                 ),
                                                 pre: ({ ...props }) => (
                                                     <pre
-                                                        className="font-hindi my-4 w-full items-center overflow-x-scroll bg-lime-100/60 p-4 text-center"
+                                                        className="font-hindi my-4 w-full items-center overflow-x-scroll dark:bg-lime-100/80 dark:text-neutral-800 bg-lime-100/60 p-4 text-center"
                                                         {...props}
                                                     />
                                                 ),
