@@ -38,13 +38,13 @@ export default function ArticleCard({
                 />
             </Link>
             <Link href={link} className="w-3/5">
-                <h3 className="dark:text-lime-300 line-clamp-2 font-semibold text-lime-950 selection:bg-lime-950 selection:text-lime-50 md:line-clamp-3">
+                <h3 className="line-clamp-2 font-semibold text-lime-950 selection:bg-lime-950 selection:text-lime-50 md:line-clamp-3 dark:text-stone-50">
                     {title}
                 </h3>
-                <p className="line-clamp-2 dark:text-lime-100/80 text-sm text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50">
+                <p className="line-clamp-2 text-sm text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50 dark:text-stone-200">
                     {description}
                 </p>
-                <p className="text-sm dark:text-lime-100/60 text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50">
+                <p className="text-sm text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50 dark:text-stone-400">
                     {author} - {date}
                 </p>
             </Link>

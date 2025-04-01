@@ -83,7 +83,7 @@ export default async function HomePage() {
     const recentArticles = sortedPosts.slice(1, 5)
 
     return (
-        <main className="mx-auto flex dark:bg-neutral-900 min-h-screen w-full max-w-7xl flex-col bg-lime-50 px-4 py-10 md:px-0 md:py-12">
+        <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col bg-lime-50 px-4 py-10 md:px-0 md:py-12 dark:bg-stone-950">
             <LogoDiv />
             <div className="flex w-full flex-col gap-6 md:flex-row">
                 <div className="w-full md:w-2/3">
@@ -98,9 +98,9 @@ export default async function HomePage() {
                         />
                     )}
                 </div>
-                <aside className="w-full space-y-6 dark:border-lime-100/20 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6">
+                <aside className="w-full space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6 dark:border-lime-100/20">
                     <div className="items-start">
-                        <h2 className="selection:bg-lime-950 selection:text-lime-50 text-3xl font-medium dark:text-lime-300 text-lime-950">
+                        <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-stone-50">
                             Recent Posts
                         </h2>
                     </div>

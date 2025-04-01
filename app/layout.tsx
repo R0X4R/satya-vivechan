@@ -83,7 +83,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${bricolageSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 dark:bg-neutral-900 antialiased`}>
+                className={`${bricolageSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased dark:bg-stone-950`}>
                 <LenisProvider>
                     <ThemeProvider
                         enableSystem

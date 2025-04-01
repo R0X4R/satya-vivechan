@@ -43,16 +43,16 @@ const DailyVedicQuote = () => {
     if (!quote) return null
 
     return (
-        <div className="mt-6 flex w-full max-w-3xl flex-col items-center justify-center rounded-md dark:bg-neutral-800 bg-lime-200/60 p-4 dark:text-lime-100 text-lime-900 selection:bg-lime-900 selection:text-lime-50 text-base">
-            <h2 className="my-3 flex items-center justify-center gap-3 text-xl dark:text-lime-300 font-bold">
+        <div className="mt-6 flex w-full max-w-3xl flex-col items-center justify-center rounded-md bg-lime-200/60 p-4 text-base text-lime-900 selection:bg-lime-900 selection:text-lime-50 dark:bg-stone-800 dark:text-stone-200 dark:selection:bg-stone-100 dark:selection:text-stone-950">
+            <h2 className="my-3 flex items-center justify-center gap-3 text-xl font-bold dark:text-stone-50 dark:selection:bg-stone-100 dark:selection:text-stone-950">
                 <span className="relative flex size-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full dark:bg-lime-300 bg-lime-900 opacity-75"></span>
-                    <span className="relative inline-flex size-2 rounded-full dark:bg-lime-300 bg-lime-900"></span>
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-900 opacity-75 dark:bg-stone-300"></span>
+                    <span className="relative inline-flex size-2 rounded-full bg-lime-900 dark:bg-stone-300"></span>
                 </span>
                 Today&apos;s Wisdom
                 <span className="relative flex size-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full dark:bg-lime-300 bg-lime-900 opacity-75"></span>
-                    <span className="relative inline-flex size-2 rounded-full dark:bg-lime-300 bg-lime-900"></span>
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-900 opacity-75 dark:bg-stone-300"></span>
+                    <span className="relative inline-flex size-2 rounded-full bg-lime-900 dark:bg-stone-300"></span>
                 </span>
             </h2>
             <span className="font-hindi my-2 w-full text-center">
