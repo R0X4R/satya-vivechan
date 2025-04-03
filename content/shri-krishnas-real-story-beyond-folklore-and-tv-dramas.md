@@ -36,10 +36,10 @@ As I read, I discovered a completely different Shri Krishna—one whose true cha
 
 If I talk about Shri Krishna’s popular birth story in short, I’m sure you all must have heard this tale before "Shri Krishna was born in **Mathura** to **Devaki and Vasudeva** inside a prison, as his uncle **Kansa** had imprisoned them due to a prophecy that Devaki's child would kill him. On the night of Krishna’s birth, a divine miracle occurred—**all guards fell asleep, the prison doors unlocked on their own, and heavy rains began to pour**. As **Vasudeva carried baby Krishna across the Yamuna River to Gokul**, **Sheshnag Nag spread his hood** to protect them from the storm. Krishna was safely exchanged with **Yashoda’s daughter**, and he grew up in **Vrindavan** under the loving care of **Yashoda** and **Nanda**".
 
-Don't you think that God cannot be so foolish as to announce through a divine prophecy that Kansa would be killed, only to then let seven children die first, then have Krishna born, then have a baby girl sacrificed in his place, and finally have a snake protect him while crossing the river? Snakes, by nature, either see others as food or enemies—even their own offspring are not spared—so how could one suddenly become a protector? Doesn’t this story sound more like a fairytale? According to **Mahabharat (SabhaParv, Chapter 14)**:
+Don't you think that God cannot be so foolish as to announce through a divine prophecy that Kansa would be killed, only to then let seven children die first, then have Krishna born, then have a baby girl sacrificed in his place, and finally have a snake protect him while crossing the river? Snakes, by nature, either see others as food or enemies—even their own offspring are not spared—so how could one suddenly become a protector? Doesn’t this story sound more like a fairytale? According to [**Mahabharat (SabhaParv, Chapter 14.30)**](https://archive.org/details/mahabharata-volume-1_202301/page/n1701/mode/2up):
 
 ```txt
-कस्यचिश्वथ कालस्य कंसो निर्मथ्य यादवान् । बाहेद्रथसुते देव्यावुपागच्छदृथामतिः | श्रस्ति प्राप्तिश्च नाम्ना ते सहदेवानुजेऽवले ।
+कयचत् वथ कालय कंसो नमय यादवान् । बाहथसुते देावुपागछद वृथामतः
 ```
 
 **Shri Krishna** told **Yudhishthira** about all of **Kansa’s sins** and **wrongdoings**, but **he never mentioned** that **Vasudeva** and his mother **Devaki** were **imprisoned** (which would have been for at least 10 years, given that they had eight children). This was one of Kansa’s biggest crimes, yet Krishna did not bring it up. This proves that Krishna killed Kansa because he had **oppressed the Yadavas**, not because of any prophecy. If Devaki and Vasudeva had actually been imprisoned, Krishna would have surely mentioned it. The fact that he didn’t means they were never truly held captive—this was just a later **fabricated story to make Krishna’s birth seem like a fairy tale**. If his birth had been so divine, **Maharishi Krishna Dwaipayana Vyasa (Ved Vyasa) would have definitely mentioned it in the Mahabharata**, and Krishna himself would have spoken about it.
@@ -47,10 +47,10 @@ Don't you think that God cannot be so foolish as to announce through a divine pr
 Now, the question arises—who was **Mata Yashoda**?
 
 ```txt
-आहुकं पितरं वृद्ध मातरञ्च यशस्विनीम्
+आहुकं पितरं वृद्ध मातरं च यशस्विनीम्‌
 ```
 
-If we refer to the **Mahabharata**, we do not find any mention of **Mata Yashoda**, but **Mata Devaki**, who is also called **Yashaswini**, *Mahabharat (Sabha Parv 2.64)*, is mentioned multiple times. So, does that mean **Mata Yashoda** never existed?
+If we refer to the **Mahabharata**, we do not find any mention of **Mata Yashoda**, but **Mata Devaki**, who is also called **Yashaswini**, [*Mahabharat (Sabha Parv 2.34)*](https://archive.org/details/mahabharata-volume-1_202301/page/n1611/mode/2up), is mentioned multiple times. So, does that mean **Mata Yashoda** never existed?
 
 ```txt
 संवर्धता गोपकुले बालेनव महात्मना । विख्यापितं बलं बाहोस्त्रिषु लोकेषु सञ्जय
@@ -62,7 +62,7 @@ If we look at the **Puranas**, it is said that during that time, **Yadavas often
 पार्थः प्रस्थापयामास कृत्वा गोपालिकावपुः
 ```
 
-Not only Krishna, but even **Bhagwan Balram and Devi Subhadra** spent their childhood in a similar way. **When Arjuna sent Subhadra in Gopi or Gwalin attire to meet Draupadi** (*Mahabharat Sabha Parv*), it was not just a disguise but a reflection of her early life. She naturally felt connected to this form because she had spent her childhood among the cowherds.
+Not only Krishna, but even **Bhagwan Balram and Devi Subhadra** spent their childhood in a similar way. **When Arjuna sent Subhadra in Gopi or Gwalin attire to meet Draupadi** [(*Mahabharat Adi Parv 219.21*)](https://archive.org/details/mahabharata-volume-1_202301/page/n1517/mode/2up), it was not just a disguise but a reflection of her early life. She naturally felt connected to this form because she had spent her childhood among the cowherds.
 
 While **Mata Yashoda is mentioned in the Puranas**, the stories about her vary across different texts. This makes it difficult to determine which version is the absolute truth. Hence, I have chosen to rely on **Mahabharata** as the primary reference to draw my conclusion.
 
@@ -115,6 +115,8 @@ Shri Krishna was **tall, strong, and radiant,** with **broad shoulders, mighty a
 There is **no mention** of Shri Krishna **being clean-shaven** in the Mahabharata. In fact, certain **references indicate that he had a fully grown mustache and beard**, reflecting **his mature and majestic personality**. Ancient Indian warriors and kings commonly kept facial hair as a symbol of **strength and wisdom**, and Krishna, being a **Kshatriya** and a **Yaduvanshi leader**, would have followed this tradition.
 &nbsp;
 His **voice thundered like a war drum,** commanding respect and authority. Even **Yama, the god of death, feared his brilliance.** Shri Krishna was not just a warrior but the embodiment of **strength, wisdom, and divine energy.**
+&nbsp;
+*[*PDF of all the above quoted references (verse locations are subject to change as they are updated over time)*](https://archive.org/details/unabridged-mahabharata-6-volumes-set-in-hindi-by-veda-vyasa-compressed/Mahabharata%20Volume%201.pdf)
 
 ## Krishna's other names
 
@@ -163,7 +165,7 @@ Many people always include Radha's name in Shri Krishna's stories or narrations.
 **Bhagvad Geets 6.5-6:** One must elevate oneself by one’s own mind, not degrade oneself. The mind alone is one’s friend, and the mind alone is one’s enemy.
 
 ```txt
-ब्रह्मचारिव्रते स्थितः मनः संयम्य मच्चित्तः | युक्त आसीत मत्परः || - BG 6.14
+ब्रह्मचारिव्रते स्थितः मनः संयम्य मच्चित्तः | युक्त आसीत मत्परः ||
 ```
 
 **Bhagvad Geets 6.14:** Firmly observing Brahmacharya, restraining the mind, and focusing on Me, one should sit in meditation with unwavering devotion.
@@ -206,10 +208,10 @@ Now, let’s analyze the references in these later Puranas and see what **actual
 
 ### **Radha: Daughter of Krishna**
 
-In the **Brahmavaivarta Purana, Brahma Khand 5.25-27**, the origin of Radha is described as follows:
+In the [**Brahmavaivarta Purana, Brahma Khand 5.25-27**](https://archive.org/details/357106450BrahmavaivartaPurana2SanskritTextWithEnglishTranslationPdf/357106438-Brahmavaivarta-Purana-1-Sanskrit-text-with-English-translation-pdf/page/n21/mode/2up), the origin of Radha is described as follows:
 
 ```txt
-आविर्बभूव कन्यैका कृष्णस्य वामपाश्र्वतः | तेन राया समाख्याता पुराविन्द्भिद्विजोत्तमः
+आविर्बभूव कन्यैका कृष्णस्य वामपाश्र्वतः | तेन राधा समाख्याता पुराविद्भिरश्वजोत्तमः
 ```
 
 A girl appeared from Krishna’s left side. The Brahmins who knew the ancient scriptures named her 'Radha'.
@@ -230,16 +232,16 @@ This same Radha, who is described as Shri Krishna’s eternal companion in Golok
 
 ### **Radha: Krishna’s Maternal Aunt (Mami)?**
 
-The **Prakriti Khand, Chapter 46** of the **Brahmavaivarta Purana** describes Radha’s earthly life in the following verses:
+The [**Prakriti Khand, Chapter 49**](https://archive.org/details/357106450BrahmavaivartaPurana2SanskritTextWithEnglishTranslationPdf/357106438-Brahmavaivarta-Purana-1-Sanskrit-text-with-English-translation-pdf/page/n479/mode/2up) of the **Brahmavaivarta Purana** describes Radha’s earthly life in the following verses:
 
 ```txt
-राधा जगाम वाराहे गोकूलं भरतं सती वृषभानोश्च वैश्यस्य सा च कन्या बभूव ह
+राधा जगाम वाराहे गोकुलं भारतं सती । वृषभानोश्च वैश्यस्य सा च कन्या बभूव ह
 ```
 
 In the Varaha Kalpa, Radha went to Gokul and was born as the daughter of the Vaishya chief Vrishabhanu.
 
 ```txt
-अतीते द्वादशाब्दे तु दृष्ट्वां तां नवयौवनाम् । सार्द्ध रायाण वैश्येन तत्सम्वन्धं चकार स
+अतीते द्वादशाब्दे तु दृष्टा तां नवयौवनाम् । सार्धं रायणवेश्येन तत्संबन्धं चकार सः॥।३८।।
 ```
 
 When Radha turned twelve and reached youth, she was married to a Vaishya named Rayana.
@@ -249,7 +251,7 @@ When Radha turned twelve and reached youth, she was married to a Vaishya named R
 The text further clarifies:
 
 ```txt
-कृष्णमातुर्यशोदा या रायाणस्तत्सहोदरः । गोलोके गोप कृष्र्णाशः सम्बन्धात्कृष्णमातुलः
+कृष्णमातुर्यशोदाया रायणस्तत्सहोदरः । गोलोके गोपकृष्णांशः संबन्धात्कृष्णमातुलः
 ```
 
 Rayana was the brother of Krishna's mother, Yashoda, meaning he was Krishna’s maternal uncle (mama) in his earthly incarnation.
@@ -259,7 +261,7 @@ Rayana was the brother of Krishna's mother, Yashoda, meaning he was Krishna’s 
 The Purana introduces a peculiar justification to avoid contradictions regarding Radha’s multiple relationships:
 
 ```txt
-छायां संस्थाप्य तद् गेहे साऽन्तर्धानमवाप ह। बभूव तस्य वैश्यस्य विवाहश्छायया सह
+छायां संस्थाप्य तद्‌गेहे साऽन्तर्धानमवाप ह । बभूव तस्य वैश्यस्य विवाहश्छायया सह
 ```
 
 Radha placed her shadow (Chhaya Radha) in Rayana’s house and then disappeared. Rayana’s marriage took place with this shadow Radha, not the real one.
@@ -290,10 +292,10 @@ This manipulation exposes the **contradictions and fabrications in Radha’s nar
 
 ### **Radha’s Harsh Words for Krishna**
 
-In the **Brahmavaivarta Purana (Prakriti Khand, Chapter 3)**, Radha rebukes Krishna with strong words:
+In the [**Brahmavaivarta Purana (Shri Krishna Janm Khand, Chapter 3)**](https://archive.org/details/357106450BrahmavaivartaPurana2SanskritTextWithEnglishTranslationPdf/357106450-Brahmavaivarta-Purana-2-Sanskrit-text-with-English-translation-pdf/page/n15/mode/2up), Radha rebukes Krishna with strong words:
 
 ```txt
-हे कृष्ण विरजाकान्त गच्छ मत्पुरतो हरे । कयं चुनोषि मां लोल रति-चौर-लम्पट
+हे कृष्ण विरजाकांत गच्छ मत्पुरतो हरे । कथं दुनोषि मां लोल रतिचौरातिलंपट
 ```
 
 O Krishna, beloved of Viraja, go away from me! O fickle one, thief of love, debauched one, why are you troubling me?
@@ -301,7 +303,7 @@ O Krishna, beloved of Viraja, go away from me! O fickle one, thief of love, deba
 She further says:
 
 ```txt
-शीघ्रं पद्मावतों गच्छ रत्नमालां मनोरमाम् । अथवा वनमालां वा रूपेणाऽप्रतिमाम् वज ।।
+शीघ्रं पद्मावतीं गच्छ रत्नमालां मनोरमाम् । अथवा वनमालां वा रूपेणाप्रतिमां व्रज
 ```
 
 Go quickly to Padmavati, to Ratnamala, the beautiful one. Or go to Vanamala, whose beauty is unparalleled.

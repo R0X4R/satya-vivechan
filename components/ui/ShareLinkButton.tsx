@@ -27,12 +27,12 @@ const ShareLinkButton = ({ title }: { title: string }) => {
                 href={twitterShareUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-1 items-center justify-center gap-2 rounded-xs bg-orange-500 p-3 text-sm font-medium text-lime-50 uppercase">
+                className="flex flex-1 items-center justify-center gap-2 rounded-xs bg-orange-500 p-3 text-sm font-medium text-lime-50 uppercase selection:bg-lime-50 selection:text-orange-500">
                 <RiTwitterXFill className="size-4" /> Share on X
             </Link>
             <button
                 onClick={copyToClipboard}
-                className="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xs bg-orange-500 p-3 text-sm font-medium text-lime-50 uppercase">
+                className="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xs bg-orange-500 p-3 text-sm font-medium text-lime-50 uppercase selection:bg-lime-50 selection:text-orange-500">
                 <RiLinkM className="size-4" /> Copy Link
             </button>
         </div>

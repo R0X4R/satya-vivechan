@@ -14,6 +14,8 @@ import remarkBreaks from "remark-breaks"
 import Header from "@/components/menus/Header"
 import rehypeRaw from "rehype-raw"
 import AdComponent from "@/components/blocks/AdsComponent"
+import Link from "next/link"
+import { RiExternalLinkLine } from "react-icons/ri"
 
 // Generate Metadata for SEO
 export async function generateMetadata({
@@ -178,8 +180,8 @@ export default async function Page({
                             {blogItem.article.map((article, index) => (
                                 <div
                                     key={index}
-                                    className="my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:text-stone-950 dark:selection:bg-stone-100">
-                                    <h2 className="mt-2 mb-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:selection:text-stone-950 dark:selection:bg-stone-100 dark:text-stone-100">
+                                    className="my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:bg-stone-100 dark:selection:text-stone-950">
+                                    <h2 className="mt-2 mb-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950">
                                         {article.heading}
                                     </h2>
                                     <div className="prose prose-lg my-2">
@@ -191,45 +193,59 @@ export default async function Page({
                                             rehypePlugins={[rehypeRaw]}
                                             // allowDangerousHtml={true}
                                             components={{
+                                                a: ({
+                                                    href,
+                                                    children,
+                                                    ...props
+                                                }) => (
+                                                    <a
+                                                        href={href}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="text-lime-900 underline underline-offset-3 hover:text-lime-800 dark:text-stone-50 dark:hover:text-stone-300"
+                                                        {...props}>
+                                                        {children}
+                                                    </a>
+                                                ),
                                                 h1: ({ ...props }) => (
                                                     <h1
-                                                        className="text-3xl font-bold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:text-stone-950 dark:selection:bg-stone-100"
+                                                        className="text-3xl font-bold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950"
                                                         {...props}
                                                     />
                                                 ),
                                                 h2: ({ ...props }) => (
                                                     <h2
-                                                        className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:text-stone-950 dark:selection:bg-stone-100"
+                                                        className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950"
                                                         {...props}
                                                     />
                                                 ),
                                                 h3: ({ ...props }) => (
                                                     <h3
-                                                        className="my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-stone-100 dark:selection:text-stone-950 dark:selection:bg-stone-100"
+                                                        className="my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950"
                                                         {...props}
                                                     />
                                                 ),
                                                 p: ({ ...props }) => (
                                                     <p
-                                                        className="my-2 text-base leading-relaxed text-lime-900 dark:text-stone-200/80 dark:selection:text-stone-950/80 dark:selection:bg-stone-100/80"
+                                                        className="my-2 text-base leading-relaxed text-lime-900 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 ul: ({ ...props }) => (
                                                     <ul
-                                                        className="my-2 list-inside list-disc text-lime-900 dark:text-stone-200/80 dark:selection:text-stone-950/80 dark:selection:bg-stone-100/80"
+                                                        className="my-2 list-inside list-disc text-lime-900 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 ol: ({ ...props }) => (
                                                     <ol
-                                                        className="my-2 list-inside list-decimal text-lime-900 dark:text-stone-200/80 dark:selection:text-stone-950/80 dark:selection:bg-stone-100/80"
+                                                        className="my-2 list-inside list-decimal text-lime-900 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 li: ({ ...props }) => (
                                                     <li
-                                                        className="ml-5 dark:text-stone-200/80 dark:selection:text-stone-950/80 dark:selection:bg-stone-100/80"
+                                                        className="ml-5 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
                                                         {...props}
                                                     />
                                                 ),
@@ -239,14 +255,14 @@ export default async function Page({
                                                     ...props
                                                 }) => (
                                                     <code
-                                                        className={`font-hindi my-4 w-full items-center overflow-x-scroll p-4 text-center ${className || ""}`}
+                                                        className={`font-hindi my-4 w-full items-center overflow-x-scroll p-4 text-center dark:selection:text-stone-50 ${className || ""}`}
                                                         {...props}>
                                                         {children}
                                                     </code>
                                                 ),
                                                 pre: ({ ...props }) => (
                                                     <pre
-                                                        className="font-hindi my-4 w-full items-center overflow-x-scroll bg-stone-100/60 p-4 text-center dark:bg-stone-50 dark:text-stone-950 dark:selection:bg-stone-950 dark:selection:text-stone-50"
+                                                        className="font-hindi my-4 w-full items-center overflow-x-scroll bg-lime-200/60 p-4 text-center selection:bg-lime-950/60 selection:text-lime-100 dark:bg-stone-50 dark:text-stone-950 dark:selection:bg-stone-950/60 dark:selection:text-stone-50"
                                                         {...props}
                                                     />
                                                 ),

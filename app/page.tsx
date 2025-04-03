@@ -4,6 +4,7 @@ import RecentHeroPost from "@/components/ui/RecentHeroPost"
 import LogoDiv from "@/components/blocks/LogoDiv"
 import ArticleCard from "@/components/blocks/ArticleCard"
 import type { Metadata } from "next"
+import NewsletterForm from "@/components/blocks/Newsletter"
 
 interface CustomMetadata {
     title: string
@@ -117,6 +118,7 @@ export default async function HomePage() {
                     ))}
                 </aside>
             </div>
+            {/* <NewsletterForm/> */}
         </main>
     )
 }
