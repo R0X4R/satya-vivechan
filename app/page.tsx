@@ -4,39 +4,6 @@ import RecentHeroPost from "@/components/ui/RecentHeroPost"
 import LogoDiv from "@/components/blocks/LogoDiv"
 import ArticleCard from "@/components/blocks/ArticleCard"
 import type { Metadata } from "next"
-import NewsletterForm from "@/components/blocks/Newsletter"
-
-interface CustomMetadata {
-    title: string
-    description: string
-    alternates?: {
-        canonical?: string
-        languages?: {
-            "en-US": string
-        }
-    }
-    twitter?: {
-        card: string
-        site: string
-        title: string
-        description: string
-    }
-    creator?: string
-    openGraph?: {
-        title: string
-        description: string
-        url: string
-        siteName: string
-        images: {
-            url: string
-            width: number
-            height: number
-            alt: string
-        }[]
-        locale: string
-        type: string
-    }
-}
 
 export const metadata: Metadata = {
     title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
@@ -118,7 +85,6 @@ export default async function HomePage() {
                     ))}
                 </aside>
             </div>
-            {/* <NewsletterForm/> */}
         </main>
     )
 }
