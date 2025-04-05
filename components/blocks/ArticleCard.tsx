@@ -32,7 +32,9 @@ export default function ArticleCard({
                     height={0}
                     width={0}
                     sizes="100vw"
-                    priority
+                    // priority
+                    placeholder="blur"
+                    blurDataURL="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBgAAAAwAQCdASoEAAQAAvAfJZkAAA=="
                     quality={50}
                     title={title}
                     alt={description}

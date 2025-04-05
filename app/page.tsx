@@ -67,7 +67,7 @@ export default async function HomePage() {
                         />
                     )}
                 </div>
-                <aside className="w-full space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6 dark:border-lime-100/20">
+                <aside className="w-full content-visibility-auto space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6 dark:border-lime-100/20">
                     <div className="items-start">
                         <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-stone-50">
                             Recent Posts
