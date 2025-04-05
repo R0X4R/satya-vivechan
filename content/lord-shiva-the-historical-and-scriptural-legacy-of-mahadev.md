@@ -4,8 +4,8 @@ author: "Eshan Singh"
 date: "26 February, 2025"
 title: "Lord Shiva: The Historical & Scriptural Legacy of Mahadev"
 description: "This article explores Lord Shiva's historical and scriptural significance, referencing texts like the Mahabharata and Shanti Parva. It covers his titles, roles in governance, Ayurveda, Sanskrit grammar, and Sankhya philosophy. It also examines the transformation of Shiva from a historical figure to a divine symbol."
-image: "/images/shiva.jpg"
-opengraph: "/images/shiva-og-image.jpg"
+image: "/images/shiva.webp"
+opengraph: "/images/shiva-og-image.webp"
 ---
 
 ## Lord Shiva: A Divine Personality and His Teachings

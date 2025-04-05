@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import { Bricolage_Grotesque } from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css"
-import LenisProvider from "@/components/ui/LenisProvider"
 import { ThemeProvider } from "next-themes"
 import Footer from "@/components/menus/Footer"
 
@@ -84,16 +83,14 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body
                 className={`${bricolageSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased dark:bg-stone-950`}>
-                <LenisProvider>
-                    <ThemeProvider
-                        enableSystem
-                        attribute="class"
-                        defaultTheme="dark"
-                        disableTransitionOnChange>
-                        {children}
-                        <Footer />
-                    </ThemeProvider>
-                </LenisProvider>
+                <ThemeProvider
+                    enableSystem
+                    attribute="class"
+                    defaultTheme="dark"
+                    disableTransitionOnChange>
+                    {children}
+                    <Footer />
+                </ThemeProvider>
             </body>
         </html>
     )

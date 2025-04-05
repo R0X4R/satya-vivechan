@@ -4,8 +4,8 @@ author: "Eshan Singh"
 date: "11 March, 2025"
 title: "The Origin of Mother Ganga: Popular Stories & Logical Truth"
 description: "This article takes you on a journey through the historical and scriptural origins of Mother Ganga, exploring references from the Ramayana. It uncovers the deeper meaning behind the poetic verses, revealing how our scriptures are not just mythology but encoded history. You will learn about the great efforts of King Bhagiratha, the significance of Lord Shiva’s role, and how the descent of Ganga was one of the greatest civil engineering projects ever undertaken. By the end, you will gain a newfound appreciation for the divine river—not just as a sacred entity but as a symbol of human perseverance, wisdom, and civilization's growth."
-image: "/images/ganga.jpg"
-opengraph: "/images/ganga-og-image.jpg"
+image: "/images/ganga.webp"
+opengraph: "/images/ganga-og-image.webp"
 ---
 
 ## Popular mythological story about the origin of Mother Ganga

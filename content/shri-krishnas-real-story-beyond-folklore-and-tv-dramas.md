@@ -4,8 +4,8 @@ author: "Eshan Singh"
 date: "28 March, 2025"
 title: "Shri Krishna’s Real Story: Beyond Folklore and TV Dramas"
 description: "By reading this article, you'll uncover the truth about Shri Krishna based on the original Mahabharata, free from later myths and misconceptions. You'll learn about his real role, his relationship with Mata Rukmini, and how modern interpretations have altered his image. This article provides a historically accurate and scripturally backed perspective, helping you understand Shri Krishna as the powerful and righteous leader he truly was."
-image: "/images/krishna.jpg"
-opengraph: "/images/krishna-og-image.jpg"
+image: "/images/krishna.webp"
+opengraph: "/images/krishna-og-image.webp"
 ---
 
 ## Before You Read – A Small Request
