@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import dynamic from "next/dynamic"
-import logo from "@/public/images/logo.png"
+import logo from "@/public/images/logo.webp"
 
 const DailyVedicQuote = dynamic(
     () => import("@/components/blocks/VedicQuotes"),
