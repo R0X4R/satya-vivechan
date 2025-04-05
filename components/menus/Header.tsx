@@ -11,7 +11,7 @@ const Header = () => {
                     href="/"
                     className="flex items-center gap-2 text-xl font-black tracking-tighter text-lime-950 uppercase md:hidden">
                     <Image
-                        src="/images/logo.png"
+                        src="/images/logo.webp"
                         alt="logo"
                         width={0}
                         height={0}
