@@ -8,6 +8,7 @@ import Footer from "@/components/menus/Footer"
 const bricolageSans = Bricolage_Grotesque({
     variable: "--font-bricolage-sans",
     subsets: ["latin"],
+    display: "swap",
 })
 
 const hindiFont = localFont({

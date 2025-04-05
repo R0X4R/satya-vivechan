@@ -4,7 +4,6 @@ import RecentHeroPost from "@/components/ui/RecentHeroPost"
 import LogoDiv from "@/components/blocks/LogoDiv"
 import ArticleCard from "@/components/blocks/ArticleCard"
 import type { Metadata } from "next"
-import dynamic from 'next/dynamic'
 
 export const metadata: Metadata = {
     title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
