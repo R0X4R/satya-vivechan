@@ -32,6 +32,8 @@ export default function ArticleCard({
                     height={0}
                     width={0}
                     sizes="100vw"
+                    priority
+                    quality={50}
                     title={title}
                     alt={description}
                     className="h-full w-full rounded-lg object-cover transition-transform duration-500 ease-linear group-hover:scale-105"
