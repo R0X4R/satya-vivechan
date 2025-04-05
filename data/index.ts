@@ -129,4 +129,34 @@ export const vedicQuotes = [
         reference: "ऋ 7.12.3",
         meaning: "O Lord of light and life, Agni, you are our judge and our friend. Those blessed with peace and prosperity praise you with wisdom and devotion. May those who love and trust you receive your generous blessings. And may all wise ones and leaders protect and guide us toward peace, prosperity, and well-being",
     },
+    {
+        id: 21,
+        mantra: "यथा॒ द्यां च॑ पृथि॒वीं चा॒न्तस्तिष्ठ॑ति॒ तेज॑नम्। ए॒वा रोगं॑ चास्रा॒वं चा॒न्तस्ति॑ष्ठतु॒ मुञ्ज॒ इत्",
+        reference: "अ 1.2.4",
+        meaning: "Those who, amidst their inner and outer sufferings, remember the all-purifying, heart-refining Divine — they transcend sorrow and radiate with spiritual brilliance. Just as a wise physician uses sacred cleansing herbs to heal both visible and hidden ailments, so too does the noble Āchārya, through the light of true knowledge, dispel the ignorance of a devoted Brahmachārī’s heart."
+    },
+    {
+        id: 21,
+        mantra: "आज्य॑स्य परमेष्ठि॒ञ्जात॑वेद॒स्तनू॑वशिन्। अग्ने॑ तौ॒लस्य॒ प्राशा॑न यातु॒धाना॒न्वि ला॑पय",
+        reference: "अ 1.7.2",
+        meaning: "Just as the sacred fire blazes forth when it receives offerings of Ghee and holy materials measured and poured with devotion through the ladle (sruk and sruva), in the same way, a righteous and radiant king, accepting the taxes offered by his people, uses them to punish the wicked and uphold justice.Through his dharmic rule, the people live in constant joy, peace, and harmony."
+    },
+    {
+        id: 22,
+        mantra: "या॑तु॒धान॑स्य सोमप ज॒हि प्र॒जां नय॑स्व च। नि स्तु॑वा॒नस्य॑ पातय॒ पर॒मक्ष्यु॒ताव॑रम्",
+        reference: "अ 1.8.3",
+        meaning: "May the king, calm in nature yet glorious like one who has tasted the nectar of immortality, rise with strength to destroy and capture the wicked. May he utterly vanquish the deceitful enemies who spread slander and falsehood, so that such sinners are compelled to abandon their inner evil thoughts, their outward corrupt actions, and all sinful deeds."
+    },
+    {
+        id: 24,
+        mantra: "अरो॑रवी॒द्वृष्णो॑ अस्य॒ वज्रोऽमा॑नुषं॒ यन्मानु॑षो नि॒जूर्वा॑त्। नि मा॒यिनो॑ दान॒वस्य॑ मा॒या अपा॑दयत्पपि॒वान्त्सु॒तस्य॑",
+        reference: "ऋ 2.11.10",
+        meaning: "Just as the sound of thunder in the sky reveals the presence of hidden clouds, in the same way, righteous rulers should expose the wicked through their deceitful actions— making their treachery known and awakening them to truth through firm justice."
+    },
+    {
+        id: 25,
+        mantra: "धृष्टि॑र॒स्यपा॑ऽग्नेऽअ॒ग्निमा॒मादं॑ जहि॒ निष्क्र॒व्याद॑ꣳ से॒धा दे॑व॒यजं॑ वह। ध्रु॒वम॑सि पृथि॒वीं दृ॑ꣳह ब्रह्म॒वनि॑ त्वा क्षत्र॒वनि॑ सजात॒वन्युप॑दधामि॒ भ्रातृ॑व्यस्य व॒धाय॑",
+        reference: "य 1.17",
+        meaning: "O Agni, fearless flame of yajna, extinguish the fire of cruelty, and kindle the light of unity. Hold the earth steady in dharma. Protect the wise, defend the just, and shelter all life. Burn away the darkness that threatens truth. Shine within us, O Divine Fire, and lead us toward the good"
+    },
 ]
