@@ -30,7 +30,7 @@ const RecentHeroPost: React.FC<RecentHeroPostProps> = ({
                         alt={title}
                         fill
                         priority
-                        className="rounded-lg object-cover object-center transition-transform duration-500 ease-linear select-none group-hover:scale-105"
+                        className="h-full w-full rounded-lg object-cover object-center transition-transform duration-500 ease-linear select-none group-hover:scale-105"
                     />
                 </div>
                 <div className="flex flex-col">

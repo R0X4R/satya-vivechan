@@ -4,7 +4,7 @@ import ThemeToggle from "../blocks/ThemeButton"
 
 const Footer = () => {
     return (
-        <footer className="mx-auto max-w-7xl border-lime-950/10 py-6 md:py-8 dark:border-lime-100/20">
+        <footer className="mx-auto max-w-7xl border-t border-lime-950/10 py-6 md:py-8 dark:border-lime-100/20">
             <div className="fixed bottom-10 right-10">
                 <ThemeToggle />
             </div>

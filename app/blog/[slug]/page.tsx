@@ -14,8 +14,8 @@ import remarkBreaks from "remark-breaks"
 import Header from "@/components/menus/Header"
 import rehypeRaw from "rehype-raw"
 import AdComponent from "@/components/blocks/AdsComponent"
-import Link from "next/link"
-import { RiExternalLinkLine } from "react-icons/ri"
+import ArticleAudio from "@/components/ui/ArticleAudio"
+import { PiPlayDuotone } from "react-icons/pi"
 
 // Generate Metadata for SEO
 export async function generateMetadata({
@@ -167,14 +167,31 @@ export default async function Page({
                         />
                     </div>
                     <div className="mx-auto my-8 flex w-full max-w-5xl flex-col items-center justify-center px-4 md:max-w-7xl md:px-0">
-                        <div className="mb-5 flex w-full max-w-4xl items-center justify-between px-2">
-                            <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 dark:text-stone-200/80">
-                                Author: Eshan Singh
-                            </p>
-                            <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 dark:text-stone-200/80">
-                                Published: {blogItem.date}
-                            </p>
+                        <div className="mb-5 grid w-full max-w-4xl grid-cols-2 items-center justify-between md:grid-cols-3">
+                            <div className="col-span-2 mb-5 flex items-center justify-start md:col-span-1 md:mb-0">
+                                {blogItem.audio ? (
+                                    <ArticleAudio audio={blogItem.audio} />
+                                ) : (
+                                    <h3 className="flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition outline-none selection:bg-lime-900 selection:text-lime-50">
+                                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50">
+                                                <PiPlayDuotone />
+                                        </span>
+                                        <span className="min-w-[160px] text-left">
+                                            No audio available
+                                        </span>
+                                    </h3>
+                                )}
+                            </div>
+                            <div className="col-span-2 flex items-center justify-between gap-1">
+                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 md:text-center dark:text-stone-200/80">
+                                    Author: Eshan Singh
+                                </p>
+                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 dark:text-stone-200/80">
+                                    Published: {blogItem.date}
+                                </p>
+                            </div>
                         </div>
+
                         <div className="flex w-full max-w-4xl flex-col items-start justify-start px-2">
                             <AdComponent />
                             {blogItem.article.map((article, index) => (
@@ -206,6 +223,21 @@ export default async function Page({
                                                         {...props}>
                                                         {children}
                                                     </a>
+                                                ),
+                                                img: ({
+                                                    src = "",
+                                                    alt = "",
+                                                    ...props
+                                                }) => (
+                                                    <Image
+                                                        src={src}
+                                                        alt={alt}
+                                                        width={0}
+                                                        height={0}
+                                                        sizes="100vw"
+                                                        className="my-4 w-full object-cover"
+                                                        {...props}
+                                                    />
                                                 ),
                                                 h1: ({ ...props }) => (
                                                     <h1

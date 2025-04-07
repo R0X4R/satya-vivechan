@@ -20,6 +20,7 @@ interface Post {
     description: string;
     image?: string;
     opengraph?: string;
+    audio?: string;
     content: string;
     article: { heading: string; content: string[]; reference?: string }[];
     contentHtml: string;

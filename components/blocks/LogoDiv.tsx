@@ -22,7 +22,7 @@ export default function LogoDiv() {
                     priority
                     placeholder="blur"
                     fill
-                    className="pointer-events-none rounded-full object-contain select-none"
+                    className="h-full w-full pointer-events-none rounded-full object-contain select-none"
                     alt="logo"
                 />
             </div>
