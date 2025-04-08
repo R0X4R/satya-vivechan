@@ -13,7 +13,7 @@ import remarkGfm from "remark-gfm"
 import remarkBreaks from "remark-breaks"
 import Header from "@/components/menus/Header"
 import rehypeRaw from "rehype-raw"
-import AdComponent from "@/components/blocks/AdsComponent"
+// import AdComponent from "@/components/blocks/AdsComponent"
 import ArticleAudio from "@/components/ui/ArticleAudio"
 import { PiPlayDuotone } from "react-icons/pi"
 
@@ -193,7 +193,7 @@ export default async function Page({
                         </div>
 
                         <div className="flex w-full max-w-4xl flex-col items-start justify-start px-2">
-                            <AdComponent />
+                            {/* <AdComponent /> */}
                             {blogItem.article.map((article, index) => (
                                 <div
                                     key={index}
