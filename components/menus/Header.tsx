@@ -9,7 +9,7 @@ const Header = () => {
             <div className="mx-auto flex max-w-5xl items-center justify-between rounded-xl dark:bg-stone-100 bg-lime-100 px-4 py-1 ring-1 ring-lime-300/50 dark:ring-stone-300/50 md:px-6 md:py-4">
                 <Link
                     href="/"
-                    className="flex items-center gap-2 text-xl font-black tracking-tighter text-lime-950 uppercase md:hidden">
+                    className="flex items-center gap-2 text-base font-black tracking-tighter text-lime-950 uppercase md:hidden">
                     <Image
                         src="/images/logo.webp"
                         alt="logo"

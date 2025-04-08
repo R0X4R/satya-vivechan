@@ -167,7 +167,7 @@ export default async function Page({
                         />
                     </div>
                     <div className="mx-auto my-8 flex w-full max-w-5xl flex-col items-center justify-center px-4 md:max-w-7xl md:px-0">
-                        <div className="mb-5 px-2 grid w-full max-w-4xl grid-cols-2 items-center justify-between md:grid-cols-3">
+                        <div className="mb-5 max-md:border-b dark:max-md:border-stone-50/30 max-md:border-lime-950/20 max-md:pb-5 px-2 grid w-full max-w-4xl grid-cols-2 items-center justify-between md:grid-cols-3">
                             <div className="col-span-2 mb-5 flex items-center justify-start md:col-span-1 md:mb-0">
                                 {blogItem.audio ? (
                                     <ArticleAudio audio={blogItem.audio} />
@@ -183,7 +183,7 @@ export default async function Page({
                                 )}
                             </div>
                             <div className="col-span-2 flex items-center justify-between gap-1">
-                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 md:text-center dark:text-stone-200/80">
+                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 md:ml-10 md:text-center dark:text-stone-200/80">
                                     Author: Eshan Singh
                                 </p>
                                 <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 dark:text-stone-200/80">

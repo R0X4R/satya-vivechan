@@ -29,7 +29,7 @@ export default function ArticleAudio({ audio }: { audio: string }) {
     return (
         <button
             onClick={handleToggle}
-            className="flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition selection:bg-lime-900 outline-none selection:text-lime-50 dark:text-stone-200/80">
+            className="max-md:bg-lime-950 max-md:w-full max-md:py-4 max-md:text-lime-50 dark:max-md:bg-stone-50 dark:max-md:text-stone-950 flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition selection:bg-lime-900 outline-none selection:text-lime-50 dark:text-stone-200/80">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50 dark:text-stone-950 dark:bg-stone-200/80">
                 {isPlaying ? <PiPauseDuotone /> : <PiPlayDuotone />}
             </span>
