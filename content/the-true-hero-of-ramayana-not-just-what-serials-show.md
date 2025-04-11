@@ -5,6 +5,7 @@ date: "06 April, 2025"
 title: "The True Hero of Vālmīki Rāmāyaṇ: Not Just What Serials Show"
 description: "This article uncovers the real character of Bhagwaan Shri Ram as described in the original Valmiki Ramayana, beyond the false images shown in TV serials. With clear references to Sanskrit shlokas, it highlights Shri Ram’s divine qualities—his strength, courage, deep love for Sita, and his commitment to dharma. It also explains who Narad Muni truly was and why his words hold value, correcting many modern misunderstandings. The article invites readers to rediscover Ram’s true story through authentic scriptures, not media fiction."
 image: "/images/ram.webp"
+category: "Ramayan"
 opengraph: "/images/ram-og-image.webp"
 audio: "/audios/ram-audio.mp3"
 ---

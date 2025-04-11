@@ -1,9 +1,12 @@
-import React from "react"
+import React, { Suspense } from "react"
 import { getAllPosts } from "@/lib/posts"
 import RecentHeroPost from "@/components/ui/RecentHeroPost"
 import LogoDiv from "@/components/blocks/LogoDiv"
 import ArticleCard from "@/components/blocks/ArticleCard"
 import type { Metadata } from "next"
+import CategoryFilter from "@/components/blocks/CategoryFilter"
+import FilteredBlogList from "@/components/ui/FilteredBlogList"
+import BlogListSkeleton from "@/components/ui/BlogListSkeleton"
 
 export const metadata: Metadata = {
     title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
@@ -44,11 +47,17 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
     const posts = await getAllPosts()
+
     const sortedPosts = posts.sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     )
+
     const recentPost = sortedPosts[0]
     const recentArticles = sortedPosts.slice(1, 5)
+
+    const allCategories = Array.from(
+        new Set(posts.map((post) => post.category))
+    )
 
     return (
         <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col bg-lime-50 px-4 py-10 md:px-0 md:py-12 dark:bg-stone-950">
@@ -66,7 +75,7 @@ export default async function HomePage() {
                         />
                     )}
                 </div>
-                <aside className="w-full content-visibility-auto space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6 dark:border-lime-100/20">
+                <aside className="content-visibility-auto w-full space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6 dark:border-lime-100/20">
                     <div className="items-start">
                         <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-stone-50">
                             Recent Posts
@@ -84,6 +93,17 @@ export default async function HomePage() {
                         />
                     ))}
                 </aside>
+            </div>
+            <div className="my-10 flex flex-col py-8">
+                <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-stone-50">
+                    Articles
+                </h2>
+                <Suspense fallback={<BlogListSkeleton />}>
+                    <FilteredBlogList
+                        posts={sortedPosts}
+                        categories={allCategories}
+                    />
+                </Suspense>
             </div>
         </main>
     )

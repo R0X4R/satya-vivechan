@@ -16,6 +16,7 @@ interface Post {
     opengraph?: string
     audio?: string
     content: string
+    category: string
     article: { heading: string; content: string[]; reference?: string }[]
     contentHtml: string
 }
@@ -37,6 +38,7 @@ export const getAllPosts = () => {
             title: data.title || "Untitled",
             date: data.date || "Unknown",
             audio: data.audio || "Unknown",
+            category: data.category || "Unknown Category",
             author: data.author || "Unknown Author",
             opengraph: data.opengraph || "/images/satya-vivechan-og-image.png",
             description: data.description || "No description available",
@@ -102,6 +104,7 @@ export const getMarkdownData = async (slug: string): Promise<Post> => {
         date: data.date || "Unknown",
         image: data.image,
         audio: data.audio,
+        category: data.category || "Unknown Category",
         opengraph: data.opengraph,
         description: data.description || "No description available",
         content: await marked.parse(content),

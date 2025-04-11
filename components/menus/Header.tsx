@@ -16,7 +16,7 @@ const Header = () => {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        className="w-12 rounded-full transition-transform duration-300 hover:scale-105"
+                        className="w-12 rounded-full"
                     />
                     Satya Vivechan
                 </Link>
@@ -27,14 +27,14 @@ const Header = () => {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        className="w-48 transition-transform duration-300 hover:scale-105"
+                        className="w-48"
                     />
                 </Link>
                 <div className="flex gap-3 items-center justify-center">
                     <ThemeToggle />
                     <Link
                         href="/"
-                        className="hidden group items-center gap-0.5 text-sm font-medium text-lime-900 transition-all duration-300 hover:text-lime-700 md:flex md:text-base dark:text-stone-950">
+                        className="hidden group items-center gap-0.5 text-sm font-medium text-lime-900 transition-all duration-300 hover:text-lime-700 dark:hover:text-stone-900 md:flex md:text-base dark:text-stone-950">
                         <RxChevronLeft className="size-5 transition-transform dark:text-stone-950 duration-300 group-hover:-translate-x-0.5" />
                         Back to Homepage
                     </Link>

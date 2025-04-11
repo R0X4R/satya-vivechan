@@ -5,6 +5,7 @@ date: "21 March, 2025"
 title: "Lord Hanuman: The History, His True Form—Monkey or Human"
 description: "This article debunks the myth that Lord Hanuman was a monkey and provides evidence from the Valmiki Ramayan proving he was a human from a warrior tribe called Vanaras. It highlights Hanuman's fluency in Sanskrit, ability to disguise as a Brahmin, and participation in a structured kingdom—traits impossible for a monkey. The article also notes that Valmiki referred to Kishkindha's people as Jan (humans) and their women as Stri, reinforcing their human identity."
 image: "/images/hanuman.webp"
+category: "Ramayan"
 opengraph: "/images/hanuman-og-image.webp"
 ---
 

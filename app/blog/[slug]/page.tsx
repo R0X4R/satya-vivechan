@@ -13,7 +13,7 @@ import remarkGfm from "remark-gfm"
 import remarkBreaks from "remark-breaks"
 import Header from "@/components/menus/Header"
 import rehypeRaw from "rehype-raw"
-// import AdComponent from "@/components/blocks/AdsComponent"
+import { MdError } from "react-icons/md"
 import ArticleAudio from "@/components/ui/ArticleAudio"
 import { PiPlayDuotone } from "react-icons/pi"
 
@@ -163,18 +163,18 @@ export default async function Page({
                             sizes="100vw"
                             height={0}
                             width={0}
-                            className="h-96 w-full object-cover object-center saturate-0 transition-transform duration-700 ease-linear select-none group-hover:scale-105 group-hover:saturate-100 md:h-500"
+                            className="h-96 w-full object-cover object-center transition-transform duration-700 ease-linear select-none group-hover:scale-105 group-hover:saturate-100 md:h-500 md:saturate-0"
                         />
                     </div>
                     <div className="mx-auto my-8 flex w-full max-w-5xl flex-col items-center justify-center px-4 md:max-w-7xl md:px-0">
-                        <div className="mb-5 max-md:border-b dark:max-md:border-stone-50/30 max-md:border-lime-950/20 max-md:pb-5 px-2 grid w-full max-w-4xl grid-cols-2 items-center justify-between md:grid-cols-3">
+                        <div className="mb-5 grid w-full max-w-4xl grid-cols-2 items-center justify-between px-2 max-md:border-b max-md:border-lime-950/20 max-md:pb-5 md:grid-cols-3 dark:max-md:border-stone-50/30">
                             <div className="col-span-2 mb-5 flex items-center justify-start md:col-span-1 md:mb-0">
                                 {blogItem.audio ? (
                                     <ArticleAudio audio={blogItem.audio} />
                                 ) : (
-                                    <h3 className="flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition outline-none selection:bg-lime-900 selection:text-lime-50">
-                                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50">
-                                                <PiPlayDuotone />
+                                    <h3 className="flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition outline-none selection:bg-lime-900 selection:text-lime-50 max-md:w-full max-md:bg-lime-950 max-md:py-4 max-md:text-lime-50 dark:text-stone-200/80 dark:max-md:bg-stone-50 dark:max-md:text-stone-950">
+                                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50 dark:text-stone-950 dark:bg-stone-200/80">
+                                            <MdError />
                                         </span>
                                         <span className="min-w-[160px] text-left">
                                             No audio available
