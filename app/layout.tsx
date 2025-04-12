@@ -73,6 +73,12 @@ export const metadata: Metadata = {
         shortcut: "/images/favicon-16x16.png",
         apple: "/images/apple-touch-icon.png",
     },
+    other: [
+    {
+      name: "blogarama-site-verification",
+      content: "blogarama-d32834b2-0936-42a8-991b-ff2a4d8901d2",
+    },
+  ],
 }
 
 export default function RootLayout({
