@@ -22,7 +22,7 @@ export default function LogoDiv() {
                     priority
                     placeholder="blur"
                     fill
-                    className="h-full w-full pointer-events-none rounded-full object-contain select-none"
+                    className="pointer-events-none h-full w-full rounded-full object-contain select-none"
                     alt="logo"
                 />
             </div>
@@ -30,6 +30,11 @@ export default function LogoDiv() {
                 Satya Vivechan
                 <span className="text-sm font-normal tracking-wide text-lime-950/60 md:text-4xl dark:text-stone-50/60 dark:selection:bg-stone-50 dark:selection:text-stone-950/60">
                     Unveiling Hindu History & Scriptures
+                </span>
+                <span className="sr-only text-sm font-normal tracking-wide text-lime-950/60 md:text-4xl dark:text-stone-50/60 dark:selection:bg-stone-50 dark:selection:text-stone-950/60">
+                    Discover the wisdom of Sanatan Vedic Dharma, uncover ancient
+                    history, and learn timeless life lessons through deeply
+                    researched storytelling at Satya Vivechan.
                 </span>
             </h1>
             <DailyVedicQuote />

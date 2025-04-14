@@ -55,7 +55,7 @@ const DailyVedicQuote = () => {
                     <span className="relative inline-flex size-2 rounded-full bg-lime-900 dark:bg-stone-300"></span>
                 </span>
             </h2>
-            <span className="font-hindi font-medium my-2 w-full text-center">
+            <span className="font-hindi my-2 w-full text-center font-medium">
                 {quote.mantra}
             </span>
             <p>{quote.meaning}</p>
