@@ -47,16 +47,16 @@ const About = () => {
         <>
             <Header />
             <main className="mx-auto flex w-full flex-col items-center justify-center overflow-x-hidden bg-lime-50 dark:bg-stone-950">
-                <section className="flex w-full flex-col items-center justify-center py-20 sm:py-28 md:py-36">
-                    <div className="flex w-full max-w-5xl flex-col items-start justify-center text-left sm:items-center sm:text-center">
-                        <h1 className="text-3xl font-black tracking-tight text-lime-950 uppercase selection:bg-lime-950 selection:text-lime-50 sm:text-5xl md:text-7xl dark:text-stone-50 dark:selection:bg-stone-100 dark:selection:text-stone-950">
-                            <span className="mb-2 block text-lg font-medium tracking-normal text-lime-950/80 uppercase sm:text-xl md:text-2xl">
-                                About 
+                <section className="flex w-full flex-col items-center justify-center mt-36">
+                    <div className="flex w-full max-w-5xl flex-col items-center justify-center">
+                        <h1 className="text-5xl font-black tracking-tight text-lime-950 uppercase selection:bg-lime-950 selection:text-lime-50 text-center md:text-7xl dark:text-stone-50 dark:selection:bg-stone-100 dark:selection:text-stone-950">
+                            <span className="block text-lg font-medium tracking-normal text-lime-950/80 uppercase md:text-2xl">
+                                About
                             </span>
                             Satya Vivechan
                         </h1>
 
-                        <p className="mt-6 text-base leading-relaxed text-lime-900 selection:bg-lime-900 selection:text-lime-50 sm:text-lg md:text-xl dark:text-stone-200/80 dark:selection:bg-stone-100 dark:selection:text-stone-950">
+                        <p className="px-4 mt-6 text-base leading-relaxed text-lime-900 selection:bg-lime-900 selection:text-lime-50 text-center md:text-xl dark:text-stone-200/80 dark:selection:bg-stone-100 dark:selection:text-stone-950">
                             <span className="block">
                                 Satya Vivechan is a platform dedicated to
                                 presenting the truth as revealed in our ancient
@@ -85,7 +85,7 @@ const About = () => {
                     </div>
 
                     <div className="group relative mt-2 flex w-full flex-col items-center justify-center">
-                        <h2 className="pointer-events-none absolute z-10 flex size-36 flex-col items-center justify-center rounded-full bg-lime-50/90 text-center uppercase opacity-0 mix-blend-overlay backdrop-blur transition-all duration-300 ease-linear group-hover:opacity-100">
+                        <h2 className="pointer-events-none absolute z-10 flex size-36 flex-col items-center justify-center rounded-full bg-lime-50/90 text-center uppercase md:opacity-0 mix-blend-overlay backdrop-blur transition-all duration-300 ease-linear md:group-hover:opacity-100">
                             ai generated images
                         </h2>
                         <Marquee
