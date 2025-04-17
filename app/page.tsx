@@ -4,7 +4,6 @@ import RecentHeroPost from "@/components/ui/RecentHeroPost"
 import LogoDiv from "@/components/blocks/LogoDiv"
 import ArticleCard from "@/components/blocks/ArticleCard"
 import type { Metadata } from "next"
-import CategoryFilter from "@/components/blocks/CategoryFilter"
 import FilteredBlogList from "@/components/ui/FilteredBlogList"
 import BlogListSkeleton from "@/components/ui/BlogListSkeleton"
 

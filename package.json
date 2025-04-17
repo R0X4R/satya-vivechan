@@ -13,6 +13,7 @@
     "dependencies": {
         "@react-email/components": "^0.0.35",
         "@react-email/render": "^1.0.5",
+        "clsx": "^2.1.1",
         "gray-matter": "^4.0.3",
         "marked": "^15.0.7",
         "next": "15.2.0",
@@ -31,6 +32,7 @@
         "remark-gfm": "^4.0.1",
         "remark-html": "^16.0.1",
         "resend": "^4.2.0",
+        "tailwind-merge": "^3.2.0",
         "use-sound": "^5.0.0"
     },
     "devDependencies": {

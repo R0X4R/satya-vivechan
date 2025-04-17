@@ -7,7 +7,10 @@
     --color-gradient-light: linear-gradient(180deg, #ffffff 40.13%, rgb(209, 220, 255) 100%);
     --color-dark: rgba(5, 5, 5);
     --height-500: 500px;
-    /* --font-poppins: var(--font-poppins); */
+    --shadow-forest-glow: -8px 0px 105px -15px rgba(25,46,3,0.55);
+    --shadow-forest-glow-dark: 1px 29px 53px -25px rgba(240, 255, 220, 0.25);
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
 }
 
 * {
@@ -21,4 +24,47 @@
 
 body {
     font-family: var(--font-bricolage-sans), sans-serif;
+}
+
+.marquee-animate {
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: var(--play, running);
+    animation-duration: var(--duration, 20s);
+}
+
+.marquee-animate-vertical {
+    animation-name: marquee-vertical;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: var(--play, running);
+    animation-duration: var(--duration, 20s);
+}
+
+
+/* .group:hover .marquee-animate,
+.group:hover .marquee-animate-vertical {
+    --play: paused;
+} */
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+@keyframes marquee-vertical {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(calc(-100% - var(--gap)));
+    }
 }
