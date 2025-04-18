@@ -7,7 +7,7 @@
     --color-gradient-light: linear-gradient(180deg, #ffffff 40.13%, rgb(209, 220, 255) 100%);
     --color-dark: rgba(5, 5, 5);
     --height-500: 500px;
-    --shadow-forest-glow: -8px 0px 105px -15px rgba(25,46,3,0.55);
+    --shadow-forest-glow: -8px 0px 105px -15px rgba(25, 46, 3, 0.55);
     --shadow-forest-glow-dark: 1px 29px 53px -25px rgba(240, 255, 220, 0.25);
     --animate-marquee: marquee var(--duration) infinite linear;
     --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
@@ -42,12 +42,19 @@ body {
     animation-duration: var(--duration, 20s);
 }
 
+.rotate360 {
+    animation: rotate360 2s linear infinite;
+}
 
-/* .group:hover .marquee-animate,
-.group:hover .marquee-animate-vertical {
-    --play: paused;
-} */
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes marquee {
     from {

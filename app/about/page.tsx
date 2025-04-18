@@ -50,7 +50,7 @@ const About = () => {
                 <section className="flex w-full flex-col items-center justify-center mt-36">
                     <div className="flex w-full max-w-5xl flex-col items-center justify-center">
                         <h1 className="text-5xl font-black tracking-tight text-lime-950 uppercase selection:bg-lime-950 selection:text-lime-50 text-center md:text-7xl dark:text-stone-50 dark:selection:bg-stone-100 dark:selection:text-stone-950">
-                            <span className="block text-lg font-medium tracking-normal text-lime-950/80 uppercase md:text-2xl">
+                            <span className="block text-lg font-medium tracking-normal dark:text-stone-50/80 text-lime-950/80 uppercase md:text-2xl">
                                 About
                             </span>
                             Satya Vivechan
