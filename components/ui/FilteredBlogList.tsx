@@ -60,26 +60,26 @@ const FilteredBlogList = ({ posts, categories }: Props) => {
                         key={index}
                         href={`/blog/${post.slug}`}
                         className="group block cursor-pointer transition-all">
-                        <div className="select-none overflow-hidden relative w-full p-0">
+                        <div className="relative w-full overflow-hidden p-0 select-none">
                             <Image
                                 src={post.image}
                                 alt={post.description}
                                 title={post.title}
-                                className="group-hover:scale-105 transition-transform duration-500 ease-linear aspect-[16/9] h-60 w-full object-cover"
+                                className="aspect-[16/9] h-60 w-full object-cover transition-transform duration-500 ease-linear group-hover:scale-105"
                                 width={0}
                                 height={0}
                             />
-                            <span className="pointer-events-none absolute top-3 left-3 bg-lime-50 px-3 py-2 text-xs font-medium tracking-wide text-lime-950 uppercase mix-blend-screen backdrop-blur-md selection:bg-lime-950 selection:text-lime-50 md:line-clamp-3 dark:bg-stone-700 dark:text-stone-50">
+                            <span className="pointer-events-none absolute top-3 left-3 bg-lime-50 px-3 py-2 text-xs font-medium tracking-wide text-lime-950 uppercase mix-blend-screen backdrop-blur-md selection:bg-lime-950 selection:text-lime-50 md:line-clamp-3 dark:bg-neutral-700 dark:text-neutral-50">
                                 {post.category}
                             </span>
                         </div>
-                        <h3 className="mt-4 line-clamp-2 text-base font-bold text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-stone-50">
+                        <h3 className="mt-4 line-clamp-2 text-base font-bold text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-neutral-50">
                             {post.title}
                         </h3>
-                        <p className="mt-2 line-clamp-2 text-sm font-normal text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50 dark:text-stone-400">
+                        <p className="mt-2 line-clamp-2 text-sm font-normal text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50 dark:text-neutral-400">
                             {post.description}
                         </p>
-                        <div className="mt-2 text-xs text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50 dark:text-stone-400">
+                        <div className="mt-2 text-xs text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50 dark:text-neutral-400">
                             {post.author} -{" "}
                             {new Date(post.date).toLocaleDateString("en-GB", {
                                 day: "2-digit",
@@ -95,7 +95,7 @@ const FilteredBlogList = ({ posts, categories }: Props) => {
                 <button
                     onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
                     disabled={currentPage === 1}
-                    className="rounded-xs min-w-36 cursor-pointer bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-stone-200 dark:text-stone-900">
+                    className="min-w-36 cursor-pointer rounded-xs bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-neutral-200 dark:text-neutral-900">
                     Previous
                 </button>
                 <button
@@ -103,7 +103,7 @@ const FilteredBlogList = ({ posts, categories }: Props) => {
                         setCurrentPage((p) => Math.min(p + 1, totalPages))
                     }
                     disabled={currentPage === totalPages}
-                    className="rounded-xs min-w-36 cursor-pointer bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-stone-200 dark:text-stone-900">
+                    className="min-w-36 cursor-pointer rounded-xs bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-neutral-200 dark:text-neutral-900">
                     Next
                 </button>
             </div>

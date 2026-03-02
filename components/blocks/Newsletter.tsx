@@ -36,11 +36,11 @@ export default function NewsletterForm() {
     }
 
     return (
-        <div className="mt-5 flex min-h-500 w-full flex-col items-center justify-center bg-lime-200/60 px-8 sm:px-0 dark:bg-stone-600/30">
-            <h2 className="my-2 text-center text-base font-light text-lime-950/70 uppercase selection:bg-lime-950/70 selection:text-lime-50 sm:text-xl dark:text-stone-50/70">
+        <div className="mt-5 flex min-h-500 w-full flex-col items-center justify-center bg-lime-200/60 px-8 sm:px-0 dark:bg-neutral-600/30">
+            <h2 className="my-2 text-center text-base font-light text-lime-950/70 uppercase selection:bg-lime-950/70 selection:text-lime-50 sm:text-xl dark:text-neutral-50/70">
                 Want to be notified as soon as a new article is released
             </h2>
-            <h3 className="my-2 max-w-2xl text-center text-4xl font-black text-lime-950 capitalize selection:bg-lime-950 selection:text-lime-50 sm:text-5xl dark:text-stone-50">
+            <h3 className="my-2 max-w-2xl text-center text-4xl font-black text-lime-950 capitalize selection:bg-lime-950 selection:text-lime-50 sm:text-5xl dark:text-neutral-50">
                 Signup for our newsletter
             </h3>
             <div className="my-12 flex w-full max-w-xl items-center justify-center">
@@ -52,17 +52,17 @@ export default function NewsletterForm() {
                             type="email"
                             placeholder="Enter your email"
                             value={email}
-                            className="w-full border-b border-lime-950/70 py-3 text-lime-950 outline-none selection:bg-lime-950 selection:text-lime-50 sm:w-96 dark:border-stone-50/30"
+                            className="w-full border-b border-lime-950/70 py-3 text-lime-950 outline-none selection:bg-lime-950 selection:text-lime-50 sm:w-96 dark:border-neutral-50/30"
                             onChange={(e) => setEmail(e.target.value)}
                             required
                         />
                         <button
                             type="submit"
-                            className="w-full cursor-pointer bg-lime-900 px-6 py-3 text-lime-100 selection:bg-lime-100 selection:text-lime-900 sm:w-auto dark:bg-stone-50 dark:text-stone-700">
+                            className="w-full cursor-pointer bg-lime-900 px-6 py-3 text-lime-100 selection:bg-lime-100 selection:text-lime-900 sm:w-auto dark:bg-neutral-50 dark:text-neutral-700">
                             Subscribe
                         </button>
                     </div>
-                    <p className="text-center text-base text-lime-950/70 uppercase selection:bg-lime-950/70 selection:text-lime-50 dark:text-stone-50/70">
+                    <p className="text-center text-base text-lime-950/70 uppercase selection:bg-lime-950/70 selection:text-lime-50 dark:text-neutral-50/70">
                         {message}
                     </p>
                 </form>

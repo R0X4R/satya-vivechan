@@ -17,10 +17,10 @@ const CategoryFilter = ({
                 <button
                     key={cat}
                     onClick={() => onCategorySelect(cat)}
-                    className={`outline-none col-span-2 flex min-w-24 cursor-pointer items-center justify-center gap-2 rounded-xs p-3 text-xs font-medium uppercase selection:bg-lime-50 selection:text-lime-900 md:col-span-1 ${
+                    className={`col-span-2 flex min-w-24 cursor-pointer items-center justify-center gap-2 rounded-xs p-3 text-xs font-medium uppercase outline-none selection:bg-lime-50 selection:text-lime-900 md:col-span-1 ${
                         selectedCategory === cat
-                            ? "bg-lime-900 text-lime-50 dark:bg-stone-50 dark:text-lime-950"
-                            : "bg-lime-900/60 text-lime-50 hover:bg-lime-900/90 dark:bg-stone-50/60 dark:text-lime-950 dark:hover:bg-stone-50/90"
+                            ? "bg-lime-900 text-lime-50 dark:bg-neutral-50 dark:text-[#121212]"
+                            : "bg-lime-900/60 text-lime-50 hover:bg-lime-900/90 dark:bg-neutral-50/60 dark:text-[#121212] dark:hover:bg-neutral-50/90"
                     }`}>
                     {cat}
                 </button>

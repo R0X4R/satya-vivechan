@@ -7,6 +7,7 @@
     --color-gradient-light: linear-gradient(180deg, #ffffff 40.13%, rgb(209, 220, 255) 100%);
     --color-dark: rgba(5, 5, 5);
     --height-500: 500px;
+    --color-background: oklch(0.1822 0 0);
     --shadow-forest-glow: -8px 0px 105px -15px rgba(25, 46, 3, 0.55);
     --shadow-forest-glow-dark: 1px 29px 53px -25px rgba(240, 255, 220, 0.25);
     --animate-marquee: marquee var(--duration) infinite linear;
@@ -23,7 +24,7 @@
 }
 
 body {
-    font-family: var(--font-bricolage-sans), sans-serif;
+    font-family: var(--font-circular-sans), sans-serif;
 }
 
 .marquee-animate {

@@ -4,6 +4,7 @@ import localFont from "next/font/local"
 import "./globals.css"
 import { ThemeProvider } from "next-themes"
 import Footer from "@/components/menus/Footer"
+import { circularSans } from "@/fonts"
 
 const bricolageSans = Bricolage_Grotesque({
     variable: "--font-bricolage-sans",
@@ -73,12 +74,13 @@ export const metadata: Metadata = {
         shortcut: "/images/favicon-16x16.png",
         apple: "/images/apple-touch-icon.png",
     },
-    verification: { 
-    other: [
-    {
-      "blogarama-site-verification":"blogarama-d32834b2-0936-42a8-991b-ff2a4d8901d2",
-    },
-  ],
+    verification: {
+        other: [
+            {
+                "blogarama-site-verification":
+                    "blogarama-d32834b2-0936-42a8-991b-ff2a4d8901d2",
+            },
+        ],
     },
 }
 
@@ -90,7 +92,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${bricolageSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased dark:bg-stone-950`}>
+                className={`${bricolageSans.variable} ${circularSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased dark:bg-neutral-950`}>
                 <ThemeProvider
                     enableSystem
                     attribute="class"

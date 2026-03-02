@@ -59,7 +59,7 @@ export default async function HomePage() {
     )
 
     return (
-        <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col bg-lime-50 px-4 py-10 md:px-0 md:py-12 dark:bg-stone-950">
+        <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col bg-lime-50 px-4 py-10 md:px-0 md:py-12 dark:bg-neutral-950">
             <LogoDiv />
             <div className="flex w-full flex-col gap-6 md:flex-row">
                 <div className="w-full md:w-2/3">
@@ -76,7 +76,7 @@ export default async function HomePage() {
                 </div>
                 <aside className="content-visibility-auto w-full space-y-6 border-lime-950/20 py-5 max-md:border-t md:w-1/3 md:border-l-2 md:py-0 md:pl-6 dark:border-lime-100/20">
                     <div className="items-start">
-                        <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-stone-50">
+                        <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-neutral-50">
                             Recent Posts
                         </h2>
                     </div>
@@ -94,7 +94,7 @@ export default async function HomePage() {
                 </aside>
             </div>
             <div className="my-10 flex flex-col py-8">
-                <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-stone-50">
+                <h2 className="text-3xl font-medium text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-neutral-50">
                     Articles
                 </h2>
                 <Suspense fallback={<BlogListSkeleton />}>

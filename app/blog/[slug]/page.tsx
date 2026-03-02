@@ -143,7 +143,7 @@ export default async function Page({
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
             />
             <Header />
-            <main className="flex h-full w-full flex-col items-center justify-center bg-lime-50 backdrop-blur-sm dark:bg-stone-950">
+            <main className="dark:bg-background flex h-full w-full flex-col items-center justify-center bg-lime-50 backdrop-blur-sm">
                 <section className="flex w-full flex-col items-center justify-center space-y-5 py-24 md:py-36">
                     <div
                         id="information"
@@ -167,13 +167,13 @@ export default async function Page({
                         />
                     </div>
                     <div className="mx-auto my-8 flex w-full max-w-5xl flex-col items-center justify-center px-4 md:max-w-7xl md:px-0">
-                        <div className="mb-5 grid w-full max-w-4xl grid-cols-2 items-center justify-between px-2 max-md:border-b max-md:border-lime-950/20 max-md:pb-5 md:grid-cols-3 dark:max-md:border-stone-50/30">
+                        <div className="mb-5 grid w-full max-w-4xl grid-cols-2 items-center justify-between px-2 max-md:border-b max-md:border-lime-950/20 max-md:pb-5 md:grid-cols-3 dark:max-md:border-neutral-300/30">
                             <div className="col-span-2 mb-5 flex items-center justify-start md:col-span-1 md:mb-0">
                                 {blogItem.audio ? (
                                     <ArticleAudio audio={blogItem.audio} />
                                 ) : (
-                                    <h3 className="flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition outline-none selection:bg-lime-900 selection:text-lime-50 max-md:w-full max-md:bg-lime-950 max-md:py-4 max-md:text-lime-50 dark:text-stone-200/80 dark:max-md:bg-stone-50 dark:max-md:text-stone-950">
-                                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50 dark:text-stone-950 dark:bg-stone-200/80">
+                                    <h3 className="flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition outline-none selection:bg-lime-900 selection:text-lime-50 max-md:w-full max-md:bg-lime-950 max-md:py-4 max-md:text-lime-50 dark:text-neutral-200/80 dark:max-md:bg-neutral-50 dark:max-md:text-neutral-950">
+                                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50 dark:bg-neutral-200/80 dark:text-neutral-950">
                                             <MdError />
                                         </span>
                                         <span className="min-w-[160px] text-left">
@@ -183,10 +183,10 @@ export default async function Page({
                                 )}
                             </div>
                             <div className="col-span-2 flex items-center justify-between gap-1">
-                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 md:ml-10 md:text-center dark:text-stone-200/80">
+                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 md:ml-10 md:text-center dark:text-neutral-200/80">
                                     Author: Eshan Singh
                                 </p>
-                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 dark:text-stone-200/80">
+                                <p className="text-base font-medium text-lime-900 capitalize selection:bg-lime-900 selection:text-lime-50 dark:text-neutral-200/80">
                                     Published: {blogItem.date}
                                 </p>
                             </div>
@@ -197,8 +197,8 @@ export default async function Page({
                             {blogItem.article.map((article, index) => (
                                 <div
                                     key={index}
-                                    className="my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:bg-stone-100 dark:selection:text-stone-950">
-                                    <h2 className="mt-2 mb-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950">
+                                    className="my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
+                                    <h2 className="mt-2 mb-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
                                         {article.heading}
                                     </h2>
                                     <div className="prose prose-lg my-2">
@@ -219,7 +219,7 @@ export default async function Page({
                                                         href={href}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="text-lime-900 underline underline-offset-3 hover:text-lime-800 dark:text-stone-50 dark:hover:text-stone-300"
+                                                        className="text-lime-900 underline underline-offset-3 hover:text-lime-800 dark:text-neutral-50 dark:hover:text-neutral-300"
                                                         {...props}>
                                                         {children}
                                                     </a>
@@ -241,43 +241,43 @@ export default async function Page({
                                                 ),
                                                 h1: ({ ...props }) => (
                                                     <h1
-                                                        className="text-3xl font-bold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950"
+                                                        className="text-3xl font-bold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950"
                                                         {...props}
                                                     />
                                                 ),
                                                 h2: ({ ...props }) => (
                                                     <h2
-                                                        className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950"
+                                                        className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950"
                                                         {...props}
                                                     />
                                                 ),
                                                 h3: ({ ...props }) => (
                                                     <h3
-                                                        className="my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-stone-100 dark:selection:bg-stone-100 dark:selection:text-stone-950"
+                                                        className="my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950"
                                                         {...props}
                                                     />
                                                 ),
                                                 p: ({ ...props }) => (
                                                     <p
-                                                        className="my-2 text-base leading-relaxed text-lime-900 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
+                                                        className="my-2 text-base leading-relaxed text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 ul: ({ ...props }) => (
                                                     <ul
-                                                        className="my-2 list-inside list-disc text-lime-900 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
+                                                        className="my-2 list-inside list-disc text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 ol: ({ ...props }) => (
                                                     <ol
-                                                        className="my-2 list-inside list-decimal text-lime-900 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
+                                                        className="my-2 list-inside list-decimal text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 li: ({ ...props }) => (
                                                     <li
-                                                        className="ml-5 dark:text-stone-200/80 dark:selection:bg-stone-100/80 dark:selection:text-stone-950/80"
+                                                        className="ml-5 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
                                                         {...props}
                                                     />
                                                 ),
@@ -287,14 +287,14 @@ export default async function Page({
                                                     ...props
                                                 }) => (
                                                     <code
-                                                        className={`font-hindi my-4 w-full items-center overflow-x-scroll p-4 text-center dark:selection:text-stone-50 ${className || ""}`}
+                                                        className={`font-hindi my-4 w-full items-center overflow-x-scroll p-4 text-center dark:selection:text-neutral-50 ${className || ""}`}
                                                         {...props}>
                                                         {children}
                                                     </code>
                                                 ),
                                                 pre: ({ ...props }) => (
                                                     <pre
-                                                        className="font-hindi my-4 w-full items-center overflow-x-scroll bg-lime-200/60 p-4 text-center selection:bg-lime-950/60 selection:text-lime-100 dark:bg-stone-50 dark:text-stone-950 dark:selection:bg-stone-950/60 dark:selection:text-stone-50"
+                                                        className="font-hindi my-4 w-full items-center overflow-x-scroll bg-lime-200/60 p-4 text-center selection:bg-lime-950/60 selection:text-lime-100 dark:bg-neutral-50 dark:text-neutral-950 dark:selection:bg-neutral-950/60 dark:selection:text-neutral-50"
                                                         {...props}
                                                     />
                                                 ),
