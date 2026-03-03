@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "next-themes"
 import Footer from "@/components/menus/Footer"
 import { circularSans } from "@/fonts"
+import Header from "@/components/menus/Header"
 
 const bricolageSans = Bricolage_Grotesque({
     variable: "--font-bricolage-sans",
@@ -53,7 +54,6 @@ export const metadata: Metadata = {
     robots: {
         index: true,
         follow: true,
-        // nocache: true,
         googleBot: {
             index: true,
             follow: true,
@@ -75,12 +75,10 @@ export const metadata: Metadata = {
         apple: "/images/apple-touch-icon.png",
     },
     verification: {
-        other: [
-            {
-                "blogarama-site-verification":
-                    "blogarama-d32834b2-0936-42a8-991b-ff2a4d8901d2",
-            },
-        ],
+        other: {
+            "blogarama-site-verification":
+                "blogarama-d32834b2-0936-42a8-991b-ff2a4d8901d2",
+        },
     },
 }
 
@@ -92,12 +90,13 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${bricolageSans.variable} ${circularSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased dark:bg-neutral-950`}>
+                className={`${circularSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased dark:bg-background`}>
                 <ThemeProvider
                     enableSystem
                     attribute="class"
                     defaultTheme="dark"
                     disableTransitionOnChange>
+                    <Header />
                     {children}
                     <Footer />
                 </ThemeProvider>

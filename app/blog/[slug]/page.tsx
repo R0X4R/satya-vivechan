@@ -1,42 +1,42 @@
-import { Metadata } from "next"
-import fs from "fs"
-import path from "path"
-import React from "react"
-import { getMarkdownData } from "@/lib/posts"
-import BlogHeading from "@/components/blocks/BlogHeading"
-import Image from "next/image"
-import WhatsAppShareButton from "@/components/ui/WhatsappShareButton"
-import InstagramShareButton from "@/components/ui/InstagramShareButton"
-import ShareLinkButton from "@/components/ui/ShareLinkButton"
-import ReactMarkdown from "react-markdown"
-import remarkGfm from "remark-gfm"
-import remarkBreaks from "remark-breaks"
-import Header from "@/components/menus/Header"
-import rehypeRaw from "rehype-raw"
-import { MdError } from "react-icons/md"
-import ArticleAudio from "@/components/ui/ArticleAudio"
-import { PiPlayDuotone } from "react-icons/pi"
+import { Metadata } from "next";
+import fs from "fs";
+import path from "path";
+import React from "react";
+import { getMarkdownData } from "@/lib/posts";
+import BlogHeading from "@/components/blocks/BlogHeading";
+import Image from "next/image";
+import WhatsAppShareButton from "@/components/ui/WhatsappShareButton";
+import InstagramShareButton from "@/components/ui/InstagramShareButton";
+import ShareLinkButton from "@/components/ui/ShareLinkButton";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import remarkBreaks from "remark-breaks";
+import Header from "@/components/menus/Header";
+import rehypeRaw from "rehype-raw";
+import { MdError } from "react-icons/md";
+import ArticleAudio from "@/components/ui/ArticleAudio";
+import { PiPlayDuotone } from "react-icons/pi";
 
 // Generate Metadata for SEO
 export async function generateMetadata({
     params,
 }: {
-    params: Promise<{ slug: string }>
+    params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-    const { slug } = await params
-    const blogItem = await getMarkdownData(slug)
+    const { slug } = await params;
+    const blogItem = await getMarkdownData(slug);
 
     if (!blogItem) {
         return {
             title: "Blog Not Found - Satya Vivechan",
             description: "The requested blog post was not found.",
-        }
+        };
     }
 
     const truncatedDescription =
         blogItem.description.length > 160
             ? blogItem.description.slice(0, 157) + "..."
-            : blogItem.description
+            : blogItem.description;
 
     return {
         title: `${blogItem.title} - Satya Vivechan`,
@@ -81,30 +81,30 @@ export async function generateMetadata({
                 "en-US": `/blog/${slug}`,
             },
         },
-    }
+    };
 }
 
 // Generate Static Params for Next.js
 export async function generateStaticParams() {
-    const postsDirectory = path.join(process.cwd(), "content")
-    const filenames = fs.readdirSync(postsDirectory)
+    const postsDirectory = path.join(process.cwd(), "content");
+    const filenames = fs.readdirSync(postsDirectory);
 
     return filenames.map((filename) => ({
         slug: filename.replace(".md", ""),
-    }))
+    }));
 }
 
 // Blog Page Component
 export default async function Page({
     params,
 }: {
-    params: Promise<{ slug: string }>
+    params: Promise<{ slug: string }>;
 }) {
-    const { slug } = await params
-    const blogItem = await getMarkdownData(slug)
+    const { slug } = await params;
+    const blogItem = await getMarkdownData(slug);
 
     if (!blogItem) {
-        return <h1>Blog not found</h1>
+        return <h1>Blog not found</h1>;
     }
 
     const jsonLdData = {
@@ -134,7 +134,7 @@ export default async function Page({
             blogItem.opengraph ??
             "https://satyavivechan.live/images/satya-vivechan-og-image.png",
         url: `https://satyavivechan.live/blog/${slug}`,
-    }
+    };
 
     return (
         <>
@@ -142,12 +142,12 @@ export default async function Page({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
             />
-            <Header />
             <main className="dark:bg-background flex h-full w-full flex-col items-center justify-center bg-lime-50 backdrop-blur-sm">
                 <section className="flex w-full flex-col items-center justify-center space-y-5 py-24 md:py-36">
                     <div
                         id="information"
-                        className="my-6 flex w-full flex-col items-center justify-center px-4 break-words md:max-w-7xl md:px-0">
+                        className="my-6 flex w-full flex-col items-center justify-center px-4 break-words md:max-w-7xl md:px-0"
+                    >
                         <BlogHeading
                             text={blogItem.title}
                             description={blogItem.description}
@@ -172,8 +172,8 @@ export default async function Page({
                                 {blogItem.audio ? (
                                     <ArticleAudio audio={blogItem.audio} />
                                 ) : (
-                                    <h3 className="flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition outline-none selection:bg-lime-900 selection:text-lime-50 max-md:w-full max-md:bg-lime-950 max-md:py-4 max-md:text-lime-50 dark:text-neutral-200/80 dark:max-md:bg-neutral-50 dark:max-md:text-neutral-950">
-                                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50 dark:bg-neutral-200/80 dark:text-neutral-950">
+                                    <h3 className="dark:max-md:text-background flex cursor-pointer items-center justify-center gap-2 text-base font-medium text-lime-900 capitalize transition outline-none selection:bg-lime-900 selection:text-lime-50 max-md:w-full max-md:bg-lime-950 max-md:py-4 max-md:text-lime-50 dark:text-neutral-200/80 dark:max-md:bg-white">
+                                        <span className="dark:text-background flex h-8 w-8 items-center justify-center rounded-full bg-lime-900 p-2 text-lg text-lime-50 dark:bg-neutral-200/80">
                                             <MdError />
                                         </span>
                                         <span className="min-w-[160px] text-left">
@@ -197,8 +197,9 @@ export default async function Page({
                             {blogItem.article.map((article, index) => (
                                 <div
                                     key={index}
-                                    className="my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
-                                    <h2 className="mt-2 mb-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
+                                    className="dark:selection:text-background my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:bg-neutral-100"
+                                >
+                                    <h2 className="dark:selection:text-background mt-2 mb-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100">
                                         {article.heading}
                                     </h2>
                                     <div className="prose prose-lg my-2">
@@ -219,8 +220,9 @@ export default async function Page({
                                                         href={href}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="text-lime-900 underline underline-offset-3 hover:text-lime-800 dark:text-neutral-50 dark:hover:text-neutral-300"
-                                                        {...props}>
+                                                        className="text-lime-900 underline underline-offset-3 hover:text-lime-800 dark:text-white dark:hover:text-neutral-300"
+                                                        {...props}
+                                                    >
                                                         {children}
                                                     </a>
                                                 ),
@@ -241,43 +243,43 @@ export default async function Page({
                                                 ),
                                                 h1: ({ ...props }) => (
                                                     <h1
-                                                        className="text-3xl font-bold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950"
+                                                        className="dark:selection:text-background text-3xl font-bold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100"
                                                         {...props}
                                                     />
                                                 ),
                                                 h2: ({ ...props }) => (
                                                     <h2
-                                                        className="my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950"
+                                                        className="dark:selection:text-background my-2 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100"
                                                         {...props}
                                                     />
                                                 ),
                                                 h3: ({ ...props }) => (
                                                     <h3
-                                                        className="my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-950"
+                                                        className="dark:selection:text-background my-2 text-lg font-medium text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100"
                                                         {...props}
                                                     />
                                                 ),
                                                 p: ({ ...props }) => (
                                                     <p
-                                                        className="my-2 text-base leading-relaxed text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
+                                                        className="dark:selection:text-background/80 my-2 text-base leading-relaxed text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 ul: ({ ...props }) => (
                                                     <ul
-                                                        className="my-2 list-inside list-disc text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
+                                                        className="dark:selection:text-background/80 my-2 list-inside list-disc text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 ol: ({ ...props }) => (
                                                     <ol
-                                                        className="my-2 list-inside list-decimal text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
+                                                        className="dark:selection:text-background/80 my-2 list-inside list-decimal text-lime-900 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80"
                                                         {...props}
                                                     />
                                                 ),
                                                 li: ({ ...props }) => (
                                                     <li
-                                                        className="ml-5 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80 dark:selection:text-neutral-950/80"
+                                                        className="dark:selection:text-background/80 ml-5 dark:text-neutral-200/80 dark:selection:bg-neutral-100/80"
                                                         {...props}
                                                     />
                                                 ),
@@ -287,18 +289,20 @@ export default async function Page({
                                                     ...props
                                                 }) => (
                                                     <code
-                                                        className={`font-hindi my-4 w-full items-center overflow-x-scroll p-4 text-center dark:selection:text-neutral-50 ${className || ""}`}
-                                                        {...props}>
+                                                        className={`font-hindi my-4 w-full items-center overflow-x-scroll p-4 text-center dark:selection:text-white ${className || ""}`}
+                                                        {...props}
+                                                    >
                                                         {children}
                                                     </code>
                                                 ),
                                                 pre: ({ ...props }) => (
                                                     <pre
-                                                        className="font-hindi my-4 w-full items-center overflow-x-scroll bg-lime-200/60 p-4 text-center selection:bg-lime-950/60 selection:text-lime-100 dark:bg-neutral-50 dark:text-neutral-950 dark:selection:bg-neutral-950/60 dark:selection:text-neutral-50"
+                                                        className="font-hindi dark:text-background dark:selection:bg-background/60 my-4 w-full items-center overflow-x-scroll bg-lime-200/60 p-4 text-center selection:bg-lime-950/60 selection:text-lime-100 dark:bg-white dark:selection:text-white"
                                                         {...props}
                                                     />
                                                 ),
-                                            }}>
+                                            }}
+                                        >
                                             {Array.isArray(article.content)
                                                 ? article.content.join("\n")
                                                 : article.content}
@@ -318,5 +322,5 @@ export default async function Page({
                 </section>
             </main>
         </>
-    )
+    );
 }

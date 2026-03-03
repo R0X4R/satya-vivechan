@@ -7,6 +7,7 @@ description: "Based on ancient Sanskrit texts, Ayurvedic science, and 2,300 year
 image: "/images/holi.jpg"
 category: "Mahabharat"
 opengraph: "/images/holi-og-image.webp"
+audio: "/audios/holi.mp3"
 ---
 
 ## The Name "Holi" Does Not Come From Holika

@@ -1,50 +1,50 @@
-"use client"
-import { useState, useEffect } from "react"
-import { vedicQuotes } from "@/data" // Ensure this is correctly imported
+"use client";
+import { useState, useEffect } from "react";
+import { vedicQuotes } from "@/data"; // Ensure this is correctly imported
 
 // ✅ Correctly define the interface
 interface VedicQuote {
-    id: number
-    mantra: string
-    reference: string
-    meaning: string
+    id: number;
+    mantra: string;
+    reference: string;
+    meaning: string;
 }
 
 const getDailyQuote = (): VedicQuote => {
-    const today = new Date().toISOString().split("T")[0] // Get current date (YYYY-MM-DD)
-    const storedData = localStorage.getItem("dailyVedicQuote")
+    const today = new Date().toISOString().split("T")[0]; // Get current date (YYYY-MM-DD)
+    const storedData = localStorage.getItem("dailyVedicQuote");
 
     if (storedData) {
-        const parsedData = JSON.parse(storedData)
+        const parsedData = JSON.parse(storedData);
         if (parsedData.date === today) {
-            return parsedData.quote // ✅ Return stored quote if it's for today
+            return parsedData.quote; // ✅ Return stored quote if it's for today
         }
     }
 
     // ✅ Ensure `vedicQuotes` refers to the imported array
     const randomQuote =
-        vedicQuotes[Math.floor(Math.random() * vedicQuotes.length)]
+        vedicQuotes[Math.floor(Math.random() * vedicQuotes.length)];
 
     localStorage.setItem(
         "dailyVedicQuote",
         JSON.stringify({ date: today, quote: randomQuote })
-    )
+    );
 
-    return randomQuote
-}
+    return randomQuote;
+};
 
 const DailyVedicQuote = () => {
-    const [quote, setQuote] = useState<VedicQuote | null>(null) // ✅ Explicitly define type
+    const [quote, setQuote] = useState<VedicQuote | null>(null); // ✅ Explicitly define type
 
     useEffect(() => {
-        setQuote(getDailyQuote()) // ✅ Ensure `quote` is correctly set
-    }, [])
+        setQuote(getDailyQuote()); // ✅ Ensure `quote` is correctly set
+    }, []);
 
-    if (!quote) return null
+    if (!quote) return null;
 
     return (
-        <div className="mt-6 flex w-full max-w-3xl flex-col items-center justify-center rounded-md bg-lime-200/60 p-4 text-base text-lime-900 selection:bg-lime-900 selection:text-lime-50 dark:bg-neutral-600/30 dark:text-neutral-200 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
-            <h2 className="my-3 flex items-center justify-center gap-3 text-xl font-bold dark:text-neutral-50 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
+        <div className="dark:selection:text-background mt-6 flex w-full max-w-3xl flex-col items-center justify-center rounded-md bg-lime-200/60 p-4 text-base text-lime-900 selection:bg-lime-900 selection:text-lime-50 dark:bg-neutral-600/30 dark:text-neutral-200 dark:selection:bg-neutral-100">
+            <h2 className="dark:selection:text-background my-3 flex items-center justify-center gap-3 text-xl font-bold dark:text-white dark:selection:bg-neutral-100">
                 <span className="relative flex size-2">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-900 opacity-75 dark:bg-neutral-300"></span>
                     <span className="relative inline-flex size-2 rounded-full bg-lime-900 dark:bg-neutral-300"></span>
@@ -63,7 +63,7 @@ const DailyVedicQuote = () => {
                 - {quote.reference}
             </span>
         </div>
-    )
-}
+    );
+};
 
-export default DailyVedicQuote
+export default DailyVedicQuote;

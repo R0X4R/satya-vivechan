@@ -1,14 +1,14 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface RecentHeroPostProps {
-    imageSrc: string
-    title: string
-    description: string
-    author: string
-    date: string
-    link: string
+    imageSrc: string;
+    title: string;
+    description: string;
+    author: string;
+    date: string;
+    link: string;
 }
 
 const RecentHeroPost: React.FC<RecentHeroPostProps> = ({
@@ -34,19 +34,19 @@ const RecentHeroPost: React.FC<RecentHeroPostProps> = ({
                     />
                 </div>
                 <div className="flex flex-col">
-                    <h2 className="mt-4 text-2xl font-bold text-lime-950 selection:bg-lime-900 selection:text-lime-50 dark:text-neutral-50 dark:selection:bg-neutral-50 dark:selection:text-neutral-950">
+                    <h2 className="dark:selection:text-background mt-4 text-2xl font-bold text-lime-950 selection:bg-lime-900 selection:text-lime-50 dark:text-white dark:selection:bg-white">
                         {title}
                     </h2>
-                    <p className="mt-2 line-clamp-2 text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-neutral-200 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
+                    <p className="dark:selection:text-background mt-2 line-clamp-2 text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-neutral-200 dark:selection:bg-neutral-100">
                         {description}
                     </p>
-                    <p className="mt-2 text-sm text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-neutral-400 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
+                    <p className="dark:selection:text-background mt-2 text-sm text-lime-950/80 selection:bg-lime-900/80 selection:text-lime-50 dark:text-neutral-400 dark:selection:bg-neutral-100">
                         {author} - {date}
                     </p>
                 </div>
             </div>
         </Link>
-    )
-}
+    );
+};
 
-export default RecentHeroPost
+export default RecentHeroPost;

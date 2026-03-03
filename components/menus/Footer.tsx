@@ -1,18 +1,15 @@
 import React from "react"
-// import NewsletterForm from "../blocks/Newsletter"
-import ThemeToggle from "../blocks/ThemeButton"
 
 const Footer = () => {
     return (
-        <footer className="mx-auto max-w-7xl border-t border-lime-950/10 py-6 md:py-8 dark:border-lime-100/20">
-            <div className="fixed right-10 bottom-10">
-                <ThemeToggle />
-            </div>
-            {/* <NewsletterForm /> */}
-            <div className="mt-8 flex items-center justify-center">
-                <h2 className="text-base text-lime-950/85 selection:bg-lime-950 selection:text-lime-50 dark:text-neutral-200 dark:selection:bg-neutral-100 dark:selection:text-neutral-950">
-                    &copy; {new Date().getFullYear()} Satya Vivechan. All rights
-                    reserved.
+        <footer className="mx-auto flex h-12 w-full items-center justify-center border-t border-lime-600/30 py-2 dark:border-neutral-600/20">
+            <div className="flex items-center justify-center">
+                <h2 className="dark:selection:text-background text-sm text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-white dark:selection:bg-neutral-100">
+                    &copy;{" "}
+                    <span className="font-mono font-medium">
+                        {new Date().getFullYear()}
+                    </span>{" "}
+                    Satya Vivechan. All rights reserved.
                 </h2>
             </div>
         </footer>

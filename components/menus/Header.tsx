@@ -1,32 +1,22 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { PiCircleDashedDuotone } from "react-icons/pi"
-import ThemeToggle from "../blocks/ThemeButton"
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "../blocks/Sheet"
+import { AnimatedThemeToggler } from "../ui/animated-theme-toggler"
 
-const NavLinks = () => (
-    <div className="flex flex-col items-start justify-center gap-2 md:flex-row md:items-center md:gap-6">
-        <Link
-            href="/"
-            className="group flex items-center gap-1 text-2xl font-medium text-lime-900 transition hover:text-lime-700 md:text-base dark:text-neutral-950 dark:hover:text-neutral-900">
-            Homepage
-        </Link>
-        <Link
-            href="/about"
-            className="group flex items-center gap-1 text-2xl font-medium text-lime-900 transition hover:text-lime-700 md:text-base dark:text-neutral-950 dark:hover:text-neutral-900">
-            About
-        </Link>
-    </div>
-)
 
-const Header = () => {
+export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+
     return (
-        <header className="fixed top-0 left-0 z-50 w-full px-4 py-3 transition-all duration-300 select-none md:px-0">
-            <div className="mx-auto grid max-w-5xl grid-cols-3 items-center justify-between rounded-xl bg-lime-100 px-4 py-1 ring-1 ring-lime-300/50 md:px-6 md:py-4 dark:bg-neutral-100 dark:ring-neutral-300/50">
-                <div className="col-span-2 flex items-center gap-2 md:col-span-1">
+        <header className="dark:bg-background/90 sticky top-0 z-[999] h-16 w-full border-b border-lime-700/30 bg-lime-50/90 backdrop-blur-xl dark:border-neutral-600/40">
+            <nav className="relative w-full px-4 py-2">
+                <div className="mx-auto flex max-w-7xl items-center justify-between">
                     <Link
                         href="/"
-                        className="flex items-center justify-center gap-2 text-lg font-black tracking-tighter text-balance text-lime-950 uppercase md:text-xl">
+                        className="capitalise flex items-center justify-center gap-2 text-lg font-bold tracking-tight text-balance text-lime-950 md:text-xl dark:text-white">
                         <div className="relative flex items-center justify-center">
                             <Image
                                 src="/images/logo.webp"
@@ -39,32 +29,65 @@ const Header = () => {
                         </div>
                         Satya Vivechan
                     </Link>
+                    <div className="hidden md:flex">
+                        <div className="flex flex-col items-start justify-center gap-2 md:flex-row md:items-center md:gap-6">
+                            <Link
+                                href="/"
+                                className="group flex items-center text-2xl tracking-wide text-lime-950 uppercase transition-colors duration-150 ease-in hover:text-lime-700 md:text-sm dark:text-white dark:hover:text-white/80">
+                                Homepage
+                            </Link>
+                            <Link
+                                href="/about"
+                                className="group flex items-center text-2xl tracking-wide text-lime-950 uppercase transition-colors duration-150 ease-in hover:text-lime-700 md:text-sm dark:text-white dark:hover:text-white/80">
+                                About
+                            </Link>
+                            <AnimatedThemeToggler className="text-lime-950 dark:text-white" />
+                        </div>
+                    </div>
+                    <button
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                        className="relative flex h-8 w-8 flex-col items-center justify-center md:hidden">
+                        <span
+                            className={`absolute h-0.5 w-6 bg-lime-950 transition-all duration-300 ease-in-out dark:bg-white ${
+                                isMenuOpen ? "rotate-45" : "-translate-y-2"
+                            }`}
+                        />
+                        <span
+                            className={`absolute h-0.5 w-6 bg-lime-950 transition-all duration-300 ease-in-out dark:bg-white ${
+                                isMenuOpen ? "opacity-0" : ""
+                            }`}
+                        />
+                        <span
+                            className={`absolute h-0.5 w-6 bg-lime-950 transition-all duration-300 ease-in-out dark:bg-white ${
+                                isMenuOpen ? "-rotate-45" : "translate-y-2"
+                            }`}
+                        />
+                    </button>
                 </div>
 
-                <div className="hidden items-center justify-center md:flex">
-                    <NavLinks />
-                </div>
-
-                <div className="flex items-center justify-end gap-3">
-                    <ThemeToggle />
-                    <div className="md:hidden">
-                        <Sheet>
-                            <SheetTrigger className="rounded-md p-2 text-lime-900 ring-1 ring-lime-900/30 outline-none dark:text-neutral-950">
-                                <PiCircleDashedDuotone className="rotate360 size-5" />
-                            </SheetTrigger>
-                            <SheetContent
-                                side="top"
-                                className="flex h-60 flex-col items-start border-none bg-lime-50 pt-28 dark:bg-neutral-50">
-                                <SheetHeader>
-                                    <NavLinks />
-                                </SheetHeader>
-                            </SheetContent>
-                        </Sheet>
+                <div
+                    className={`shadow-0 dark:bg-background/90 absolute top-full left-0 max-h-120 min-h-90 w-full overflow-y-auto border-b border-lime-600/30 bg-lime-50/80 shadow-none backdrop-blur transition-all duration-300 ease-linear md:hidden dark:border-neutral-600/30 ${
+                        isMenuOpen
+                            ? "visible opacity-100"
+                            : "invisible opacity-0"
+                    }`}>
+                    <div className="mt-4 flex flex-col gap-4 p-6">
+                        <div className="flex flex-col items-start justify-center gap-6 md:flex-row md:items-center">
+                            <Link
+                                href="/"
+                                className="group flex items-center text-2xl text-lime-950 transition-colors duration-150 ease-in hover:text-lime-700 md:text-sm dark:text-white dark:hover:text-white/80">
+                                Homepage
+                            </Link>
+                            <Link
+                                href="/about"
+                                className="group flex items-center text-2xl text-lime-950 transition-colors duration-150 ease-in hover:text-lime-700 md:text-sm dark:text-white dark:hover:text-white/80">
+                                About
+                            </Link>
+                            <AnimatedThemeToggler className="text-lime-950 dark:text-white" />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
     )
 }
-
-export default Header

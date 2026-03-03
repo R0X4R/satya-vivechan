@@ -1,51 +1,51 @@
-"use client"
+"use client";
 
-import React, { useMemo, useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import CategoryFilter from "../blocks/CategoryFilter"
+import React, { useMemo, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import CategoryFilter from "../blocks/CategoryFilter";
 
-const POSTS_PER_PAGE = 6
+const POSTS_PER_PAGE = 6;
 
 type Post = {
-    title: string
-    description: string
-    image: string
-    author: string
-    slug: string
-    date: string
-    category: string
-}
+    title: string;
+    description: string;
+    image: string;
+    author: string;
+    slug: string;
+    date: string;
+    category: string;
+};
 
 type Props = {
-    posts: Post[]
-    categories: string[]
-}
+    posts: Post[];
+    categories: string[];
+};
 
 const FilteredBlogList = ({ posts, categories }: Props) => {
-    const [selectedCategory, setSelectedCategory] = useState("All")
-    const [currentPage, setCurrentPage] = useState(1)
+    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [currentPage, setCurrentPage] = useState(1);
 
     const handleCategoryChange = (category: string) => {
-        setSelectedCategory(category)
-        setCurrentPage(1) // reset pagination
-    }
+        setSelectedCategory(category);
+        setCurrentPage(1); // reset pagination
+    };
 
     const filteredPosts = useMemo(() => {
         const sorted = [...posts].sort(
             (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-        )
+        );
         return selectedCategory === "All"
             ? sorted
-            : sorted.filter((post) => post.category === selectedCategory)
-    }, [posts, selectedCategory])
+            : sorted.filter((post) => post.category === selectedCategory);
+    }, [posts, selectedCategory]);
 
-    const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
+    const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
 
     const paginatedPosts = filteredPosts.slice(
         (currentPage - 1) * POSTS_PER_PAGE,
         currentPage * POSTS_PER_PAGE
-    )
+    );
 
     return (
         <>
@@ -59,7 +59,8 @@ const FilteredBlogList = ({ posts, categories }: Props) => {
                     <Link
                         key={index}
                         href={`/blog/${post.slug}`}
-                        className="group block cursor-pointer transition-all">
+                        className="group block cursor-pointer transition-all"
+                    >
                         <div className="relative w-full overflow-hidden p-0 select-none">
                             <Image
                                 src={post.image}
@@ -69,11 +70,11 @@ const FilteredBlogList = ({ posts, categories }: Props) => {
                                 width={0}
                                 height={0}
                             />
-                            <span className="pointer-events-none absolute top-3 left-3 bg-lime-50 px-3 py-2 text-xs font-medium tracking-wide text-lime-950 uppercase mix-blend-screen backdrop-blur-md selection:bg-lime-950 selection:text-lime-50 md:line-clamp-3 dark:bg-neutral-700 dark:text-neutral-50">
+                            <span className="pointer-events-none absolute top-3 left-3 bg-lime-50 px-3 py-2 text-xs font-medium tracking-wide text-lime-950 uppercase mix-blend-screen backdrop-blur-md selection:bg-lime-950 selection:text-lime-50 md:line-clamp-3 dark:bg-neutral-700 dark:text-white">
                                 {post.category}
                             </span>
                         </div>
-                        <h3 className="mt-4 line-clamp-2 text-base font-bold text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-neutral-50">
+                        <h3 className="mt-4 line-clamp-2 text-base font-bold text-lime-950 selection:bg-lime-950 selection:text-lime-50 dark:text-white">
                             {post.title}
                         </h3>
                         <p className="mt-2 line-clamp-2 text-sm font-normal text-lime-950/80 selection:bg-lime-950/80 selection:text-lime-50 dark:text-neutral-400">
@@ -95,7 +96,8 @@ const FilteredBlogList = ({ posts, categories }: Props) => {
                 <button
                     onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
                     disabled={currentPage === 1}
-                    className="min-w-36 cursor-pointer rounded-xs bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-neutral-200 dark:text-neutral-900">
+                    className="min-w-36 cursor-pointer rounded-xs bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-neutral-200 dark:text-neutral-900"
+                >
                     Previous
                 </button>
                 <button
@@ -103,12 +105,13 @@ const FilteredBlogList = ({ posts, categories }: Props) => {
                         setCurrentPage((p) => Math.min(p + 1, totalPages))
                     }
                     disabled={currentPage === totalPages}
-                    className="min-w-36 cursor-pointer rounded-xs bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-neutral-200 dark:text-neutral-900">
+                    className="min-w-36 cursor-pointer rounded-xs bg-lime-900 px-5 py-3 text-sm text-white disabled:opacity-50 dark:bg-neutral-200 dark:text-neutral-900"
+                >
                     Next
                 </button>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default FilteredBlogList
+export default FilteredBlogList;
