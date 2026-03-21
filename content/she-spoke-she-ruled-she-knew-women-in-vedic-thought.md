@@ -1,7 +1,7 @@
 ---
 id: 8
 author: "Eshan Singh"
-date: "23 March, 2026"
+date: "22 March, 2026"
 title: "She Spoke, She Ruled, She Knew: Women in Vedic Thought"
 description: "Were women really equal in Vedic times? Explore Vedic texts, Manusmriti, and ancient history to uncover the truth about women and dharma in Hindu tradition."
 image: "/images/women.png"
