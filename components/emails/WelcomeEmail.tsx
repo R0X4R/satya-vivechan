@@ -1,11 +1,11 @@
 import {
-    Section,
-    Img,
-    Text,
-    Heading,
     Button,
+    Heading,
+    Img,
+    Section,
     Tailwind,
-} from "@react-email/components"
+    Text,
+} from "@react-email/components";
 
 export const WelcomeEmail = ({ email }: { email: string }) => (
     <Tailwind>
@@ -15,7 +15,7 @@ export const WelcomeEmail = ({ email }: { email: string }) => (
                     <Img
                         alt="Satya Vivechan Logo"
                         className="mt-8 h-14"
-                        src="https://satyavivechan.live/images/logo.svg"
+                        src="https://satyavivechan.qzz.io/images/logo.svg"
                     />
                 </div>
 
@@ -41,7 +41,8 @@ export const WelcomeEmail = ({ email }: { email: string }) => (
                 <div className="text-center">
                     <Button
                         className="bg-lime-900 px-6 py-3 font-medium text-lime-100"
-                        href="https://satyavivechan.live">
+                        href="https://satyavivechan.qzz.io"
+                    >
                         Explore Latest Articles
                     </Button>
                 </div>
@@ -52,8 +53,9 @@ export const WelcomeEmail = ({ email }: { email: string }) => (
                     <br />
                     If you wish to unsubscribe,{" "}
                     <a
-                        href="https://namaste.satyavivechan.live/unsubscribe"
-                        className="text-lime-800 underline">
+                        href="https://namaste.satyavivechan.qzz.io/unsubscribe"
+                        className="text-lime-800 underline"
+                    >
                         click here
                     </a>
                     .
@@ -61,4 +63,4 @@ export const WelcomeEmail = ({ email }: { email: string }) => (
             </Section>
         </Section>
     </Tailwind>
-)
+);

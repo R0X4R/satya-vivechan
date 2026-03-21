@@ -1,26 +1,26 @@
-import type { Metadata } from "next"
-import { Bricolage_Grotesque } from "next/font/google"
-import localFont from "next/font/local"
-import "./globals.css"
-import { ThemeProvider } from "next-themes"
-import Footer from "@/components/menus/Footer"
-import { circularSans } from "@/fonts"
-import Header from "@/components/menus/Header"
+import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
+import { Bricolage_Grotesque } from "next/font/google";
+import localFont from "next/font/local";
+import Footer from "@/components/menus/Footer";
+import Header from "@/components/menus/Header";
+import { circularSans } from "@/fonts";
+import "./globals.css";
 
 const bricolageSans = Bricolage_Grotesque({
     variable: "--font-bricolage-sans",
     subsets: ["latin"],
     display: "swap",
-})
+});
 
 const hindiFont = localFont({
     src: "./fonts/siddhanta.ttf",
     variable: "--font-hindi",
     display: "swap",
-})
+});
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://satyavivechan.live"),
+    metadataBase: new URL("https://satyavivechan.qzz.io"),
     title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
     referrer: "origin-when-cross-origin",
     authors: [{ name: "Eshan Singh" }],
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
         title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
         description:
             "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
-        url: "https://satyavivechan.live",
+        url: "https://satyavivechan.qzz.io",
         siteName: "Satya Vivechan",
         images: [
             {
-                url: "https://satyavivechan.live/images/satya-vivechan-og-image.png",
+                url: "https://satyavivechan.qzz.io/images/satya-vivechan-og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Satya Vivechan - Unveiling Hindu History & Scriptures",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "/",
         languages: {
-            "en-US": "https://satyavivechan.live/",
+            "en-US": "https://satyavivechan.qzz.io/",
         },
     },
     icons: {
@@ -80,27 +80,29 @@ export const metadata: Metadata = {
                 "blogarama-d32834b2-0936-42a8-991b-ff2a4d8901d2",
         },
     },
-}
+};
 
 export default function RootLayout({
     children,
 }: Readonly<{
-    children: React.ReactNode
+    children: React.ReactNode;
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${circularSans.variable} ${hindiFont.variable} scroll-smooth bg-lime-50 antialiased dark:bg-background`}>
+                className={`${circularSans.variable} ${hindiFont.variable} dark:bg-background scroll-smooth bg-lime-50 antialiased`}
+            >
                 <ThemeProvider
                     enableSystem
                     attribute="class"
                     defaultTheme="dark"
-                    disableTransitionOnChange>
+                    disableTransitionOnChange
+                >
                     <Header />
                     {children}
                     <Footer />
                 </ThemeProvider>
             </body>
         </html>
-    )
+    );
 }

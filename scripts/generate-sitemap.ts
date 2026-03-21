@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const siteUrl = "https://satyavivechan.live";
+const siteUrl = "https://satyavivechan.qzz.io";
 const lastMod = new Date().toISOString(); // Current timestamp
 
 // Define static pages
@@ -16,8 +16,8 @@ const staticPages = ["", "about"].map(
 const contentDir = path.join(process.cwd(), "../content");
 const blogSlugs = fs.existsSync(contentDir)
   ? fs
-      .readdirSync(contentDir)
-      .map((file) => file.replace(".md", "").replace(".json", "")) // Adjust for your file type
+    .readdirSync(contentDir)
+    .map((file) => file.replace(".md", "").replace(".json", "")) // Adjust for your file type
   : [];
 
 const blogPages = blogSlugs.map((slug) => ({

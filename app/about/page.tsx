@@ -1,9 +1,9 @@
+import React from "react";
+import { Metadata } from "next";
 import Header from "@/components/menus/Header";
 import ImageBox from "@/components/ui/ImageBox";
 import { Marquee } from "@/components/ui/Marquee";
 import { ImageNFT } from "@/data";
-import { Metadata } from "next";
-import React from "react";
 
 export const metadata: Metadata = {
     title: "About | Satya Vivechan - सत्य विवेचन",
@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "/about",
         languages: {
-            "en-US": "https://satyavivechan.live/about",
+            "en-US": "https://satyavivechan.qzz.io/about",
         },
     },
     twitter: {
         card: "summary_large_image",
-        site: "https://satyavivechan.live/about",
+        site: "https://satyavivechan.qzz.io/about",
         title: "Unveiling the True History of Hindu Scriptures - Satya Vivechan",
         description:
             "Deeply researched articles on Hindu history, ancient scriptures, and divine wisdom from Ramayana, Mahabharata, and Vedas.",
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
         title: "About | Satya Vivechan - सत्य विवेचन",
         description:
             "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
-        url: "https://satyavivechan.live/about",
+        url: "https://satyavivechan.qzz.io/about",
         siteName: "Satya Vivechan",
         images: [
             {
-                url: "https://satyavivechan.live/images/satya-vivechan-og-image.png",
+                url: "https://satyavivechan.qzz.io/images/satya-vivechan-og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Satya Vivechan - Unveiling Hindu History & Scriptures",

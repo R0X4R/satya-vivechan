@@ -1,21 +1,21 @@
+import React from "react";
+import { MdError } from "react-icons/md";
+import { PiPlayDuotone } from "react-icons/pi";
+import ReactMarkdown from "react-markdown";
 import { Metadata } from "next";
+import Image from "next/image";
 import fs from "fs";
 import path from "path";
-import React from "react";
-import { getMarkdownData } from "@/lib/posts";
+import rehypeRaw from "rehype-raw";
+import remarkBreaks from "remark-breaks";
+import remarkGfm from "remark-gfm";
 import BlogHeading from "@/components/blocks/BlogHeading";
-import Image from "next/image";
-import WhatsAppShareButton from "@/components/ui/WhatsappShareButton";
+import Header from "@/components/menus/Header";
+import ArticleAudio from "@/components/ui/ArticleAudio";
 import InstagramShareButton from "@/components/ui/InstagramShareButton";
 import ShareLinkButton from "@/components/ui/ShareLinkButton";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import remarkBreaks from "remark-breaks";
-import Header from "@/components/menus/Header";
-import rehypeRaw from "rehype-raw";
-import { MdError } from "react-icons/md";
-import ArticleAudio from "@/components/ui/ArticleAudio";
-import { PiPlayDuotone } from "react-icons/pi";
+import WhatsAppShareButton from "@/components/ui/WhatsappShareButton";
+import { getMarkdownData } from "@/lib/posts";
 
 // Generate Metadata for SEO
 export async function generateMetadata({
@@ -44,7 +44,7 @@ export async function generateMetadata({
         openGraph: {
             title: `${blogItem.title} - Satya Vivechan`,
             description: truncatedDescription,
-            url: `https://satyavivechan.live/blog/${slug}`,
+            url: `https://satyavivechan.qzz.io/blog/${slug}`,
             images: [
                 {
                     url:
@@ -58,7 +58,7 @@ export async function generateMetadata({
         },
         twitter: {
             card: "summary_large_image",
-            site: `https://satyavivechan.live/blog/${slug}`,
+            site: `https://satyavivechan.qzz.io/blog/${slug}`,
             title: `${blogItem.title} - Satya Vivechan`,
             description: truncatedDescription,
         },
@@ -123,17 +123,17 @@ export default async function Page({
             name: "Satya Vivechan",
             logo: {
                 "@type": "ImageObject",
-                url: "https://satyavivechan.live/images/logo.png",
+                url: "https://satyavivechan.qzz.io/images/logo.png",
             },
         },
         mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": `https://satyavivechan.live/blog/${slug}`,
+            "@id": `https://satyavivechan.qzz.io/blog/${slug}`,
         },
         image:
             blogItem.opengraph ??
-            "https://satyavivechan.live/images/satya-vivechan-og-image.png",
-        url: `https://satyavivechan.live/blog/${slug}`,
+            "https://satyavivechan.qzz.io/images/satya-vivechan-og-image.png",
+        url: `https://satyavivechan.qzz.io/blog/${slug}`,
     };
 
     return (

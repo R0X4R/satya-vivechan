@@ -1,11 +1,11 @@
 import React, { Suspense } from "react";
-import { getAllPosts } from "@/lib/posts";
-import RecentHeroPost from "@/components/ui/RecentHeroPost";
-import LogoDiv from "@/components/blocks/LogoDiv";
-import ArticleCard from "@/components/blocks/ArticleCard";
 import type { Metadata } from "next";
-import FilteredBlogList from "@/components/ui/FilteredBlogList";
+import ArticleCard from "@/components/blocks/ArticleCard";
+import LogoDiv from "@/components/blocks/LogoDiv";
 import BlogListSkeleton from "@/components/ui/BlogListSkeleton";
+import FilteredBlogList from "@/components/ui/FilteredBlogList";
+import RecentHeroPost from "@/components/ui/RecentHeroPost";
+import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
     title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "/",
         languages: {
-            "en-US": "https://satyavivechan.live/",
+            "en-US": "https://satyavivechan.qzz.io/",
         },
     },
     twitter: {
         card: "summary_large_image",
-        site: "https://satyavivechan.live",
+        site: "https://satyavivechan.qzz.io",
         title: "Unveiling the True History of Hindu Scriptures - Satya Vivechan",
         description:
             "Deeply researched articles on Hindu history, ancient scriptures, and divine wisdom from Ramayana, Mahabharata, and Vedas.",
@@ -29,11 +29,11 @@ export const metadata: Metadata = {
         title: "Satya Vivechan - सत्य विवेचन | Sanatan Vedic Wisdom & History",
         description:
             "Discover the wisdom of Sanatan Vedic Dharma, uncover ancient history, and learn timeless life lessons through deeply researched storytelling at Satya Vivechan.",
-        url: "https://satyavivechan.live",
+        url: "https://satyavivechan.qzz.io",
         siteName: "Satya Vivechan",
         images: [
             {
-                url: "https://satyavivechan.live/images/satya-vivechan-og-image.png",
+                url: "https://satyavivechan.qzz.io/images/satya-vivechan-og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Satya Vivechan - Unveiling Hindu History & Scriptures",

@@ -8,7 +8,7 @@
 //         const { email, subject, content } = await req.json()
 
 //         const data = await resend.emails.send({
-//             from: "Satya Vivechan <hello@namaste.satyavivechan.live>",
+//             from: "Satya Vivechan <hello@namaste.satyavivechan.qzz.io>",
 //             to: email,
 //             subject: subject,
 //             html: `<p>${content}</p>`,
