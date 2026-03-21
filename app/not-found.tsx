@@ -1,23 +1,23 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import { useRouter } from "next/navigation"
-import Header from "@/components/menus/Header"
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import Header from "@/components/menus/Header";
 
 export default function NotFound() {
-    const router = useRouter()
+    const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.push("/")
-        }, 3000) // Redirect after 3 seconds
+            router.push("/");
+        }, 3000); // Redirect after 3 seconds
 
-        return () => clearTimeout(timer) // Cleanup timer on unmount
-    }, [router])
+        return () => clearTimeout(timer); // Cleanup timer on unmount
+    }, [router]);
 
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <main className="flex h-screen flex-col items-center justify-center bg-lime-50 text-center">
                 <h1 className="text-4xl font-bold text-lime-900">
                     404 - Page Not Found
@@ -27,5 +27,5 @@ export default function NotFound() {
                 </p>
             </main>
         </>
-    )
+    );
 }
