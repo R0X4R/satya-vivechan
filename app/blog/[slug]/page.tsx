@@ -197,12 +197,12 @@ export default async function Page({
                             {blogItem.article.map((article, index) => (
                                 <div
                                     key={index}
-                                    className="dark:selection:text-background my-4 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:bg-neutral-100"
+                                    className="dark:selection:text-background my-2 w-full text-left text-base leading-6 text-lime-900 selection:bg-lime-900/70 selection:text-lime-50 dark:selection:bg-neutral-100"
                                 >
-                                    <h2 className="dark:selection:text-background mt-2 mb-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100">
+                                    <h2 className="dark:selection:text-background my-3 text-xl font-semibold text-lime-950/80 selection:bg-lime-900/90 selection:text-lime-50 dark:text-neutral-100 dark:selection:bg-neutral-100">
                                         {article.heading}
                                     </h2>
-                                    <div className="prose prose-lg my-2">
+                                    <div className="prose prose-lg">
                                         <ReactMarkdown
                                             remarkPlugins={[
                                                 remarkGfm,
