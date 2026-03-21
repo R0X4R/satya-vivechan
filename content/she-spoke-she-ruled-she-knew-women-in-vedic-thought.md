@@ -97,9 +97,9 @@ This creates a clear point. On one side, the text strongly supports dignity and 
 
 ## A Comparison with Other Traditions
 
-When we look at different parts of the world, we see that societies have treated women’s knowledge and roles in very different ways. During the European witch trials, women who had knowledge of healing or independent thinking were sometimes feared and punished. In Christianity, positions like the Pope have traditionally been limited to men. In Islamic traditions, the role of Imam in formal congregational leadership is also reserved for men. Each tradition has its own system and structure. But what stands out in Vedic literature is that authority is based on knowledge, not gender. A woman is not only allowed to learn and teach but can even attain the position of Brahma, the highest priest in a yajna.
+The Vedic examples we have seen so far may feel surprising today. But they become even more striking when we place them next to how other parts of the world treated women and knowledge. During the European witch trials, women who had knowledge of healing or independent thinking were sometimes feared and punished. In Christianity, positions like the Pope have traditionally been limited to men. In Islamic traditions, the role of Imam in formal congregational leadership is also reserved for men. Each tradition has its own system and structure. But what stands out in Vedic literature is that authority is based on knowledge, not gender. A woman is not only allowed to learn and teach but can even attain the position of Brahma, the highest priest in a yajna.
 
-## The Core Idea of Dharma (Rightousness)
+## The Core Idea of Dharma (Righteousness)
 
 At its core, dharma is not about favoritism or blind belief. Almighty does not interfere randomly or choose sides. Karma decides the results of our actions. Faith, in this sense, does not mean sitting quietly and expecting things to change. It means doing your duty honestly, standing for truth even when it is difficult, and having the courage to act. Dharma is practical and action-based. It expects responsibility, not passivity.
 
